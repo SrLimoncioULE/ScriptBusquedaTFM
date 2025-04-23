@@ -1,0 +1,144 @@
+1. CVE-2009-2430
+Fecha: 2009
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2009-2430
+Unspecified vulnerability in auditconfig in Sun Solaris 8, 9, 10, and OpenSolaris snv_01 through snv_58, when Solaris Auditing is enabled, allows local users with an RBAC execution profile for auditconfig to gain privileges via unknown attack vectors.
+
+2. CVE-2009-1969
+Fecha: 2009
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2009-1969
+Unspecified vulnerability in the Auditing component in Oracle Database 9.2.0.8, 9.2.0.8DV, 10.1.0.5, 10.2.0.4, and 11.1.0.7 allows remote authenticated users to affect confidentiality via unknown vectors.
+
+3. CVE-2009-2596
+Fecha: 2009
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2009-2596
+Unspecified vulnerability in the Solaris Auditing subsystem in Sun Solaris 9 and 10 and OpenSolaris before snv_121, when extended file attributes are used, allows local users to cause a denial of service (panic) via vectors related to fad_aupath structure members.
+
+4. CVE-2009-0555
+Fecha: 2009
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2009-0555
+Microsoft Windows Media Runtime, as used in DirectShow WMA Voice Codec, Windows Media Audio Voice Decoder, and Audio Compression Manager (ACM), does not properly process Advanced Systems Format (ASF) files, which allows remote attackers to execute arbitrary code via a crafted audio file that uses the Windows Media Speech codec, aka "Windows Media Runtime Voice Sample Rate Vulnerability."
+
+5. CVE-2009-2525
+Fecha: 2009
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2009-2525
+Microsoft Windows Media Runtime, as used in DirectShow WMA Voice Codec, Windows Media Audio Voice Decoder, and Audio Compression Manager (ACM), does not properly initialize unspecified functions within compressed audio files, which allows remote attackers to execute arbitrary code via (1) a crafted media file or (2) crafted streaming content, aka "Windows Media Runtime Heap Corruption Vulnerability."
+
+6. CVE-2009-3029
+Fecha: 2009
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2009-3029
+Cross-site scripting (XSS) vulnerability in the console in Symantec SecurityExpressions Audit and Compliance Server 4.1.1, 4.1, and earlier allows remote authenticated users to inject arbitrary web script or HTML via "external client input" that triggers crafted error messages.
+
+7. CVE-2009-3030
+Fecha: 2009
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2009-3030
+Cross-site scripting (XSS) vulnerability in Symantec SecurityExpressions Audit and Compliance Server 4.1.1, 4.1, and earlier allows remote attackers to inject arbitrary web script or HTML via vectors that trigger an error message in a response, related to an "HTML Injection issue."
+
+8. CVE-2009-1972
+Fecha: 2009
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2009-1972
+Unspecified vulnerability in the Auditing component in Oracle Database 9.2.0.8, 9.2.0.8DV, 10.1.0.5, 10.2.0.4, and 11.1.0.7 allows remote authenticated users to affect integrity, related to DBMS_SYS_SQL and DBMS_SQL.
+
+9. CVE-2009-3277
+Fecha: 2009
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3277
+datavault.tesla/impl/typesystem/associationhelper.cs in datavault allows context-dependent attackers to cause a denial of service (cpu consumption) via an input string composed of an [ (open bracket) followed by many commas, related to a certain regular expression, aka a "redos" vulnerability.
+
+10. CVE-2009-0701
+Fecha: 2009
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0701
+multiple php remote file inclusion vulnerabilities in index.php in cybershade cms 0.2b, when register_globals is enabled, allow remote attackers to execute arbitrary php code via a url in the (1) theme_header and (2) theme_footer parameters.
+
+11. CVE-2009-1768
+Fecha: 2009
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2009-1768
+Directory traversal vulnerability in download.php in Rama Zaiten CMS 0.9.8 and earlier allows remote attackers to read arbitrary files via a .. (dot dot) in the file parameter.
+
+12. CVE-2008-5883
+Fecha: 2009
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2008-5883
+Absolute path traversal vulnerability in front-end/dir.php in mini-pub 0.3 and earlier allows remote attackers to list arbitrary directories via a full pathname in the sDir parameter.
+
+13. CVE-2008-6167
+Fecha: 2009
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2008-6167
+Directory traversal vulnerability in search.php in miniPortail 2.2 and earlier allows remote attackers to include and execute arbitrary local files via a .. (dot dot) in the lng parameter.
+
+14. CVE-2008-6168
+Fecha: 2009
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2008-6168
+Cross-site scripting (XSS) vulnerability in search.php in miniPortail 2.2 and earlier allows remote attackers to inject arbitrary web script or HTML via an unspecified argument, probably the search string.
+
+15. CVE-2009-0364
+Fecha: 2009
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2009-0364
+Format string vulnerability in the mini_calendar component in Citadel.org WebCit 7.22, and other versions before 7.39, allows remote attackers to execute arbitrary code via unspecified vectors.
+
+16. CVE-2009-1588
+Fecha: 2009
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2009-1588
+Cross-site scripting (XSS) vulnerability in CGI RESCUE MiniBBS 8t before 8.95t, 8 before 8.95, 9 before 9.08, and 10 before 10.32 allows remote attackers to inject arbitrary web script or HTML via unspecified vectors.
+
+17. CVE-2008-6933
+Fecha: 2009
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2008-6933
+Directory traversal vulnerability in index.php in MiniGal b13 (aka MG2) allows remote attackers to read the source code of .php files, and possibly the content of other files, via a .. (dot dot) in the list parameter.
+
+18. CVE-2009-1007
+Fecha: 2009
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2009-1007
+Unspecified vulnerability in the Data Mining component in Oracle Database 10.2.0.4 allows remote authenticated users to affect confidentiality, integrity, and availability, related to SYS.DMP_SYS.
+
+19. CVE-2009-4826
+Fecha: 2009
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-4826
+cross-site request forgery (csrf) vulnerability in hosting/admin_ac.php in scriptsez mini hosting panel allows remote attackers to hijack the authentication of administrators for requests that alter administrative settings via a cp action.
+
+20. CVE-2009-4551
+Fecha: 2009
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-4551
+sql injection vulnerability in the survey pro module for miniweb 2.0 allows remote attackers to execute arbitrary sql commands via the campaign_id parameter in a results action to index.php.
+
+21. CVE-2009-4540
+Fecha: 2009
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-4540
+sql injection vulnerability in page.php in mini cms 1.0.1 allows remote attackers to execute arbitrary sql commands via the id parameter.
+
+22. CVE-2009-4198
+Fecha: 2009
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-4198
+sql injection vulnerability in my_orders.php in myminibill allows remote authenticated users to execute arbitrary sql commands via the orderid parameter in a status action.
+
+23. CVE-2009-3419
+Fecha: 2009
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3419
+sql injection vulnerability in index.php in the publisher module 2.0 for miniweb allows remote attackers to execute arbitrary sql commands via the historymonth parameter.
+
+24. CVE-2009-1589
+Fecha: 2009
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1589
+unspecified vulnerability in cgi rescue minibbs22 before 1.01 allows remote attackers to send email to arbitrary recipients via unknown vectors.
+

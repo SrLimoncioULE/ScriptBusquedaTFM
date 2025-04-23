@@ -1,0 +1,6 @@
+1. CVE-2001-0831
+Fecha: 2001
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2001-0831
+Unknown vulnerability in Oracle Label Security in Oracle 8.1.7 and 9.0.1, when audit functionality, SET_LABEL, or SQL*Predicate is being used, allows local users to gain additional access.
+

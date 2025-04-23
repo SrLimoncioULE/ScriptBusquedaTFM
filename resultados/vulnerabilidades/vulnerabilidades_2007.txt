@@ -1,0 +1,90 @@
+1. CVE-2007-1035
+Fecha: 2007
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2007-1035
+Unspecified vulnerability in certain demonstration scripts in getID3 1.7.1, as used in the Mediafield and Audio modules for Drupal, allows remote attackers to read and delete arbitrary files, list arbitrary directories, and write to empty files or .mp3 files via unknown vectors.
+
+2. CVE-2007-1612
+Fecha: 2007
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2007-1612
+SQL injection vulnerability in index.php in Katalog Plyt Audio 1.0 and earlier allows remote attackers to execute arbitrary SQL commands via the kolumna parameter.
+
+3. CVE-2007-2603
+Fecha: 2007
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2007-2603
+Unspecified vulnerability in the Init function in the Audio CD Ripper OCX (AudioCDRipperOCX.ocx) 1.0 ActiveX control allows remote attackers to cause a denial of service (NULL dereference and Internet Explorer crash) via unspecified vectors.
+
+4. CVE-2007-3102
+Fecha: 2007
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2007-3102
+Unspecified vulnerability in the linux_audit_record_event function in OpenSSH 4.3p2, as used on Fedora Core 6 and possibly other systems, allows remote attackers to write arbitrary characters to an audit log via a crafted username.  NOTE: some of these details are obtained from third party information.
+
+5. CVE-2007-1487
+Fecha: 2007
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1487
+directory traversal vulnerability in index.php in sascha schroeder (aka cyberteddy or cyber-inside) weblog allows remote attackers to read arbitrary files via a .. (dot dot) in the file parameter in a showarticles action.
+
+6. CVE-2006-7156
+Fecha: 2007
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2006-7156
+PHP remote file inclusion vulnerability in addon_keywords.php in Keyword Replacer (keyword_replacer) 1.0 and earlier, a module for miniBB, allows remote attackers to execute arbitrary PHP code via a URL in the pathToFiles parameter.
+
+7. CVE-2007-3856
+Fecha: 2007
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2007-3856
+Unspecified vulnerability in the Oracle Data Mining component for Oracle Database 10g Release 2 10.2.0.2 and 10.2.0.3, 10g 10.1.0.5, and Oracle9i Database Release 2 9.2.0.7, 9.2.0.8, and 9.2.0.8DV has unknown impact and remote authenticated attack vectors related to DMSYS.DMP_SYS, aka DB04.
+
+8. CVE-2007-4827
+Fecha: 2007
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2007-4827
+Unspecified vulnerability in the Modbus/TCP Diagnostic function in MiniHMI.exe for the Automated Solutions Modbus Slave ActiveX Control before 1.5 allows remote attackers to corrupt the heap and possibly execute arbitrary code via malformed Modbus requests to TCP port 502.
+
+9. CVE-2007-5719
+Fecha: 2007
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5719
+sql injection vulnerability in bb_func_search.php in minibb 2.1 allows remote attackers to execute arbitrary sql commands via the table parameter to index.php.
+
+10. CVE-2007-5255
+Fecha: 2007
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5255
+cross-site scripting (xss) vulnerability in google mini search appliance 3.4.14 allows remote attackers to inject arbitrary web script or html via the ie parameter to the /search uri.
+
+11. CVE-2007-3306
+Fecha: 2007
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3306
+php remote file inclusion vulnerability in crontab/run_billing.php in minibill 1.2.5 allows remote attackers to execute arbitrary php code via a url in the config[include_dir] parameter, a different vector than cve-2006-4489.
+
+12. CVE-2007-3272
+Fecha: 2007
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3272
+directory traversal vulnerability in index.php in minibb 2.0.5 allows remote attackers to read arbitrary files via a .. (dot dot) in the language parameter in a register action.
+
+13. CVE-2007-2647
+Fecha: 2007
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2647
+static code injection vulnerability in admin/admin_configuration.php in monalbum 0.8.7 allows remote authenticated users to inject arbitrary php code into the conf/config.inc.php file via the (1) gadm_pass, (2) gadm_user, (3) gcfghote, (4) gcfgpass, (5) gcfguser, (6) gclassement_rep, (7) gcontour, (8) gfond, (9) ggd_version, (10) ghome, (11) ghor, (12) gimg_copyright, (13) glangage, (14) gmenu_visible, (15) gmini_hasard, (16) gordre_rep, (17) gpage, (18) gracine, (19) grech_inactive, (20) grep_mini, (21) grepertoire, (22) gsite, (23) gslide, (24) gtitre, (25) guse_copyright, (26) gversion, (27) gvert, or (28) gcfgbase parameter.
+
+14. CVE-2007-0919
+Fecha: 2007
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0919
+directory traversal vulnerability in nickolas grigoriadis mini web server (miniwebsvr) 0.0.6 allows remote attackers to list the directory immediately above the web root via a ..%00 sequence in the uri.
+
+15. CVE-2007-0686
+Fecha: 2007
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0686
+the intel 2200bg 802.11 wireless mini-pci driver 9.0.3.9 (w29n51.sys) allows remote attackers to cause a denial of service (system crash) via crafted disassociation packets, which triggers memory corruption of "internal kernel structures," a different vulnerability than cve-2006-6651.  note: this issue might overlap cve-2006-3992.
+

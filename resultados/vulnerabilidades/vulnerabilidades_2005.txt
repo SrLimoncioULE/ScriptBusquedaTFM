@@ -1,0 +1,66 @@
+1. CVE-2005-0250
+Fecha: 2005
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2005-0250
+Format string vulnerability in auditselect on IBM AIX 5.1, 5.2, and 5.3 allows local users to execute arbitrary code via format string specifiers in a command line argument.
+
+2. CVE-2005-1897
+Fecha: 2005
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2005-1897
+Unknown vulnerability in FlexCast Audio Video Streaming Server before 2.0 has unknown impact and attack vectors.
+
+3. CVE-2005-1692
+Fecha: 2005
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2005-1692
+Format string vulnerability in gxine 0.4.1 through 0.4.4, and other versions down to 0.3, allows remote attackers to execute arbitrary code via a ram file with a URL whose hostname contains format string specifiers.
+
+4. CVE-2005-4487
+Fecha: 2005
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2005-4487
+Cross-site scripting (XSS) vulnerability in RAMSite R|1 CMS 1.0 and earlier allows remote attackers to inject arbitrary web script or HTML via the searchfield parameter.
+
+5. CVE-2005-1088
+Fecha: 2005
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2005-1088
+Unknown vulnerability in DameWare NT Utilities 4.8 and earlier, and Mini Remote Control 4.8 and earlier, allows local users to gain additional rights.
+
+6. CVE-2005-3754
+Fecha: 2005
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2005-3754
+Cross-site scripting (XSS) vulnerability in Google Mini Search Appliance, and possibly Google Search Appliance, allows remote attackers to inject arbitrary Javascript, and possibly other web script or HTML, via the proxystylesheet variable, which will be executed in the resulting error message.
+
+7. CVE-2005-3755
+Fecha: 2005
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2005-3755
+Directory traversal vulnerability in Google Mini Search Appliance, and possibly Google Search Appliance, allows remote attackers to determine the existence of arbitrary files via a relative path from a style sheet directory, then comparing the resulting error messages.
+
+8. CVE-2005-3758
+Fecha: 2005
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2005-3758
+Cross-site scripting (XSS) vulnerability in Google Mini Search Appliance, and possibly Google Search Appliance, allows remote attackers to inject arbitrary Javascript, and possibly other web script or HTML, via a proxystylesheet variable that contains a malicious XSLT style sheet.
+
+9. CVE-2005-3912
+Fecha: 2005
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2005-3912
+Format string vulnerability in miniserv.pl Perl web server in Webmin before 1.250 and Usermin before 1.180, with syslog logging enabled, allows remote attackers to cause a denial of service (crash or memory consumption) and possibly execute arbitrary code via format string specifiers in the username parameter to the login form, which is ultimately used in a syslog call.  NOTE: the code execution might be associated with an issue in Perl.
+
+10. CVE-2005-3130
+Fecha: 2005
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3130
+sql injection vulnerability in lucidcms 1.0.11 allows remote attackers to execute arbitrary sql commands via the login field.
+
+11. CVE-2005-3127
+Fecha: 2005
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3127
+cross-site scripting (xss) vulnerability in index.php in lucidcms 1.0.11 allows remote attackers to inject arbitrary web script or html via the query string.
+

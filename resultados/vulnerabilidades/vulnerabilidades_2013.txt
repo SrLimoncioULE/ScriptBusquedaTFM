@@ -1,0 +1,30 @@
+1. CVE-2013-3809
+Fecha: 2013
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2013-3809
+Unspecified vulnerability in the MySQL Server component in Oracle MySQL 5.5.31 and earlier and 5.6.11 and earlier allows remote authenticated users to affect integrity via unknown vectors related to Audit Log.
+
+2. CVE-2013-4258
+Fecha: 2013
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2013-4258
+Format string vulnerability in the osLogMsg function in server/os/aulog.c in Network Audio System (NAS) 1.9.3 allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via format string specifiers in unspecified vectors, related to syslog.
+
+3. CVE-2013-5534
+Fecha: 2013
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2013-5534
+Directory traversal vulnerability in the attachment service in the Voice Message Web Service (aka VMWS or Cisco Unity Web Service) in Cisco Unity Connection allows remote authenticated users to create files, and consequently execute arbitrary JSP code, via a crafted pathname for a file that is not a valid audio file, aka Bug ID CSCuj22948.
+
+4. CVE-2013-1461
+Fecha: 2013
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2013-1461
+The ExecuteSoapAction function in the SOAPAction handler in the HTTP service in MiniUPnP MiniUPnPd 1.0 allows remote attackers to cause a denial of service (NULL pointer dereference and service crash) via a SOAPAction header that lacks a # (pound sign) character, a different vulnerability than CVE-2013-0230.
+
+5. CVE-2013-1462
+Fecha: 2013
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1462
+integer signedness error in the executesoapaction function in the soapaction handler in the http service in miniupnp miniupnpd 1.0 allows remote attackers to cause a denial of service (incorrect memory copy) via a soapaction header that lacks a " (double quote) character, a different vulnerability than cve-2013-0230.
+

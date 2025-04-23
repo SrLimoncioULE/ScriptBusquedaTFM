@@ -1,0 +1,6 @@
+1. CVE-1999-1251
+Fecha: 1996
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-1999-1251
+Vulnerability in direct audio user space code on HP-UX 10.20 and 10.10 allows local users to cause a denial of service.
+

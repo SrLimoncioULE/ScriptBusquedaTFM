@@ -1,0 +1,648 @@
+1. CVE-2021-1226
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-1226
+A vulnerability in the audit logging component of Cisco Unified Communications Manager, Cisco Unified Communications Manager Session Management Edition, Cisco Unified Communications Manager IM &amp; Presence Service, Cisco Unity Connection, Cisco Emergency Responder, and Cisco Prime License Manager could allow an authenticated, remote attacker to view sensitive information in clear text on an affected system. The vulnerability is due to the storage of certain unencrypted credentials. An attacker could exploit this vulnerability by accessing the audit logs on an affected system and obtaining credentials that they may not normally have access to. A successful exploit could allow the attacker to use those credentials to discover and manage network devices.
+
+2. CVE-2021-2000
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-2000
+Vulnerability in the Unified Audit component of Oracle Database Server. Supported versions that are affected are 12.1.0.2, 12.2.0.1, 18c and 19c. Easily exploitable vulnerability allows high privileged attacker having SYS Account privilege with network access via Oracle Net to compromise Unified Audit. Successful attacks require human interaction from a person other than the attacker. Successful attacks of this vulnerability can result in unauthorized update, insert or delete access to some of Unified Audit accessible data. CVSS 3.1 Base Score 2.4 (Integrity impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:N/I:L/A:N).
+
+3. CVE-2021-21283
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-21283
+Flarum is an open source discussion platform for websites. The "Flarum Sticky" extension versions 0.1.0-beta.14 and 0.1.0-beta.15 has a cross-site scripting vulnerability. A change in release beta 14 of the Sticky extension caused the plain text content of the first post of a pinned discussion to be injected as HTML on the discussion list. The issue was discovered following an internal audit. Any HTML would be injected through the m.trust() helper. This resulted in an HTML injection where <script> tags would not be executed. However it was possible to run javascript from other HTML attributes, enabling a cross-site scripting (XSS) attack to be performed. Since the exploit only happens with the first post of a pinned discussion, an attacker would need the ability to pin their own discussion, or be able to edit a discussion that was previously pinned. On forums where all pinned posts are authored by your staff, you can be relatively certain the vulnerability has not been exploited. Forums where some user-created discussions were pinned can look at the first post edit date to find whether the vulnerability might have been exploited. Because Flarum doesn't store the post content history, you cannot be certain if a malicious edit was reverted. The fix will be available in version v0.1.0-beta.16 with Flarum beta 16. The fix has already been back-ported to Flarum beta 15 as version v0.1.0-beta.15.1 of the Sticky extension. Forum administrators can disable the Sticky extension until they are able to apply the update. The vulnerability cannot be exploited while the extension is disabled.
+
+4. CVE-2021-21286
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-21286
+AVideo Platform is an open-source Audio and Video platform. It is similar to a self-hosted YouTube. In AVideo Platform before version 10.2 there is an authorization bypass vulnerability which enables an ordinary user to get admin control. This is fixed in version 10.2. All queries now remove the pass hash and the recoverPass hash.
+
+5. CVE-2021-21318
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-21318
+Opencast is a free, open-source platform to support the management of educational audio and video content. In Opencast before version 9.2 there is a vulnerability in which publishing an episode with strict access rules will overwrite the currently set series access. This allows for an easy denial of access for all users without superuser privileges, effectively hiding the series. Access to series and series metadata on the search service (shown in media module and player) depends on the events published which are part of the series. Publishing an event will automatically publish a series and update access to it. Removing an event or republishing the event should do the same. Affected versions of Opencast may not update the series access or remove a published series if an event is being removed. On removal of an episode, this may lead to an access control list for series metadata with broader access rules than the merged access rules of all remaining events, or the series metadata still being available although all episodes of that series have been removed. This problem is fixed in Opencast 9.2.
+
+6. CVE-2021-23973
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-23973
+When trying to load a cross-origin resource in an audio/video context a decoding error may have resulted, and the content of that error may have revealed information about the resource. This vulnerability affects Firefox < 86, Thunderbird < 78.8, and Firefox ESR < 78.8.
+
+7. CVE-2021-21258
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-21258
+GLPI is an open-source asset and IT management software package that provides ITIL Service Desk features, licenses tracking and software auditing. In GLPI from version 9.5.0 and before version 9.5.4, there is a cross-site scripting injection vulnerability when using ajax/kanban.php. This is fixed in version 9.5.4.
+
+8. CVE-2021-21324
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-21324
+GLPI is an open-source asset and IT management software package that provides ITIL Service Desk features, licenses tracking and software auditing. In GLPI before version 9.5.4 there is an Insecure Direct Object Reference (IDOR) on "Solutions". This vulnerability gives an unauthorized user the ability to enumerate GLPI items names (including users logins) using the knowbase search form (requires authentication). To Reproduce: Perform a valid authentication at your GLPI instance, Browse the ticket list and select any open ticket, click on Solution form, then Search a solution form that will redirect you to the endpoint /"glpi/front/knowbaseitem.php?item_itemtype=Ticket&item_items_id=18&forcetab=Knowbase$1", and the item_itemtype=Ticket parameter present in the previous URL will point to the PHP alias of glpi_tickets table, so just replace it with "Users" to point to glpi_users table instead; in the same way, item_items_id=18 will point to the related column id, so changing it too you should be able to enumerate all the content which has an alias. Since such id(s) are obviously incremental, a malicious party could exploit the vulnerability simply by guessing-based attempts.
+
+9. CVE-2021-21327
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-21327
+GLPI is an open-source asset and IT management software package that provides ITIL Service Desk features, licenses tracking and software auditing. In GLPI before version 9.5.4 non-authenticated user can remotely instantiate object of any class existing in the GLPI environment that can be used to carry out malicious attacks, or to start a “POP chain”. As an example of direct impact, this vulnerability affects integrity of the GLPI core platform and third-party plugins runtime misusing classes which implement some sensitive operations in their constructors or destructors. This is fixed in version 9.5.4.
+
+10. CVE-2021-21367
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-21367
+Switchboard Bluetooth Plug for elementary OS from version 2.3.0 and before version version 2.3.5 has an incorrect authorization vulnerability. When the Bluetooth plug is running (in discoverable mode), Bluetooth service requests and pairing requests are automatically accepted, allowing physically proximate attackers to pair with a device running an affected version of switchboard-plug-bluetooth without the active consent of the user. By default, elementary OS doesn't expose any services via Bluetooth that allow information to be extracted by paired Bluetooth devices. However, if such services (i.e. contact list sharing software) have been installed, it's possible that attackers have been able to extract data from such services without authorization. If no such services have been installed, attackers are only able to pair with a device running an affected version without authorization and then play audio out of the device or possibly present a HID device (keyboard, mouse, etc...) to control the device. As such, users should check the list of trusted/paired devices and remove any that are not 100% confirmed to be genuine. This is fixed in version 2.3.5. To reduce the likelihood of this vulnerability on an unpatched version, only open the Bluetooth plug for short intervals when absolutely necessary and preferably not in crowded public areas. To mitigate the risk entirely with unpatched versions, do not open the Bluetooth plug within switchboard at all, and use a different method for pairing devices if necessary (e.g. `bluetoothctl` CLI).
+
+11. CVE-2021-2162
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-2162
+Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Audit Plug-in). Supported versions that are affected are 5.7.33 and prior and 8.0.23 and prior. Easily exploitable vulnerability allows low privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized update, insert or delete access to some of MySQL Server accessible data. CVSS 3.1 Base Score 4.3 (Integrity impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N).
+
+12. CVE-2021-2245
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-2245
+Vulnerability in the Oracle Database - Enterprise Edition Unified Audit component of Oracle Database Server. Supported versions that are affected are 18c and 19c. Easily exploitable vulnerability allows high privileged attacker having Create Audit Policy privilege with network access via Oracle Net to compromise Oracle Database - Enterprise Edition Unified Audit. Successful attacks of this vulnerability can result in unauthorized update, insert or delete access to some of Oracle Database - Enterprise Edition Unified Audit accessible data. CVSS 3.1 Base Score 2.7 (Integrity impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:N).
+
+13. CVE-2021-21391
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-21391
+CKEditor 5 provides a WYSIWYG editing solution. This CVE affects the following npm packages: ckeditor5-engine, ckeditor5-font, ckeditor5-image, ckeditor5-list, ckeditor5-markdown-gfm, ckeditor5-media-embed, ckeditor5-paste-from-office, and ckeditor5-widget. Following an internal audit, a regular expression denial of service (ReDoS) vulnerability has been discovered in multiple CKEditor 5 packages. The vulnerability allowed to abuse particular regular expressions, which could cause a significant performance drop resulting in a browser tab freeze. It affects all users using the CKEditor 5 packages listed above at version <= 26.0.0. The problem has been recognized and patched. The fix will be available in version 27.0.0.
+
+14. CVE-2021-3039
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-3039
+An information exposure through log file vulnerability exists in the Palo Alto Networks Prisma Cloud Compute Console where a secret used to authorize the role of the authenticated user is logged to a debug log file. Authenticated Operator role and Auditor role users with access to the debug log files can use this secret to gain Administrator role access for their active session in Prisma Cloud Compute. Prisma Cloud Compute SaaS versions were automatically upgraded to the fixed release. This issue impacts all Prisma Cloud Compute versions earlier than Prisma Cloud Compute 21.04.412.
+
+15. CVE-2021-32676
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-32676
+Nextcloud Talk is a fully on-premises audio/video and chat communication service. Password protected shared chats in Talk before version 9.0.10, 10.0.8 and 11.2.2 did not rotate the session cookie after a successful authentication event. It is recommended that the Nextcloud Talk App is upgraded to 9.0.10, 10.0.8 or 11.2.2. No workarounds for this vulnerability are known to exist.
+
+16. CVE-2021-32690
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-32690
+Helm is a tool for managing Charts (packages of pre-configured Kubernetes resources). In versions of helm prior to 3.6.1, a vulnerability exists where the username and password credentials associated with a Helm repository could be passed on to another domain referenced by that Helm repository. This issue has been resolved in 3.6.1. There is a workaround through which one may check for improperly passed credentials. One may use a username and password for a Helm repository and may audit the Helm repository in order to check for another domain being used that could have received the credentials. In the `index.yaml` file for that repository, one may look for another domain in the `urls` list for the chart versions. If there is another domain found and that chart version was pulled or installed, the credentials would be passed on.
+
+17. CVE-2021-32681
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-32681
+Wagtail is an open source content management system built on Django. A cross-site scripting vulnerability exists in versions 2.13-2.13.1, versions 2.12-2.12.4, and versions prior to 2.11.8. When the `{% include_block %}` template tag is used to output the value of a plain-text StreamField block (`CharBlock`, `TextBlock` or a similar user-defined block derived from `FieldBlock`), and that block does not specify a template for rendering, the tag output is not properly escaped as HTML. This could allow users to insert arbitrary HTML or scripting. This vulnerability is only exploitable by users with the ability to author StreamField content (i.e. users with 'editor' access to the Wagtail admin). Patched versions have been released as Wagtail 2.11.8 (for the LTS 2.11 branch), Wagtail 2.12.5, and Wagtail 2.13.2 (for the current 2.13 branch). As a workaround, site implementors who are unable to upgrade to a current supported version should audit their use of `{% include_block %}` to ensure it is not used to output `CharBlock` / `TextBlock` values with no associated template. Note that this only applies where `{% include_block %}` is used directly on that block (uses of `include_block` on a block _containing_ a CharBlock / TextBlock, such as a StructBlock, are unaffected). In these cases, the tag can be replaced with Django's `{{ ... }}` syntax - e.g. `{% include_block my_title_block %}` becomes `{{ my_title_block }}`.
+
+18. CVE-2021-35336
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-35336
+Tieline IP Audio Gateway 2.6.4.8 and below is affected by Incorrect Access Control. A vulnerability in the Tieline Web Administrative Interface could allow an unauthenticated user to access a sensitive part of the system with a high privileged account.
+
+19. CVE-2021-0286
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-0286
+A vulnerability in the handling of exceptional conditions in Juniper Networks Junos OS Evolved (EVO) allows an attacker to send specially crafted packets to the device, causing the Advanced Forwarding Toolkit manager (evo-aftmand-bt or evo-aftmand-zx) process to crash and restart, impacting all traffic going through the FPC, resulting in a Denial of Service (DoS). Continued receipt and processing of these packets will create a sustained Denial of Service (DoS) condition. Following messages will be logged prior to the crash: Feb 2 10:14:39 fpc0 evo-aftmand-bt[16263]: [Error] Nexthop: Failed to get fwd nexthop for nexthop:32710470974358 label:1089551617 for session:18 probe:35 Feb 2 10:14:39 fpc0 evo-aftmand-bt[16263]: [Error] Nexthop: Failed to get fwd nexthop for nexthop:19241453497049 label:1089551617 for session:18 probe:37 Feb 2 10:14:39 fpc0 evo-aftmand-bt[16263]: [Error] Nexthop: Failed to get fwd nexthop for nexthop:19241453497049 label:1089551617 for session:18 probe:44 Feb 2 10:14:39 fpc0 evo-aftmand-bt[16263]: [Error] Nexthop: Failed to get fwd nexthop for nexthop:32710470974358 label:1089551617 for session:18 probe:47 Feb 2 10:14:39 fpc0 audit[16263]: ANOM_ABEND auid=4294967295 uid=0 gid=0 ses=4294967295 pid=16263 comm="EvoAftManBt-mai" exe="/usr/sbin/evo-aftmand-bt" sig=11 Feb 2 10:14:39 fpc0 kernel: audit: type=1701 audit(1612260879.272:17): auid=4294967295 uid=0 gid=0 ses=4294967295 pid=16263 comm="EvoAftManBt-mai" exe="/usr/sbin/evo-aftmand-bt" sig=1 This issue affects Juniper Networks Junos OS Evolved: All versions prior to 20.4R2-EVO; 21.1 versions prior to 21.1R2-EVO.
+
+20. CVE-2021-29978
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-29978
+Multiple low security issues were discovered and fixed in a security audit of Mozilla VPN 2.x branch as part of a 3rd party security audit. This vulnerability affects Mozilla VPN < 2.3.
+
+21. CVE-2021-33256
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-33256
+A CSV injection vulnerability on the login panel of ManageEngine ADSelfService Plus Version: 6.1 Build No: 6101 can be exploited by an unauthenticated user. The j_username parameter seems to be vulnerable and a reverse shell could be obtained if a privileged user exports "User Attempts Audit Report" as CSV file. Note: The vendor disputes this vulnerability, claiming "This is not a valid vulnerability in our ADSSP product. We don't see this as a security issue at our side.
+
+22. CVE-2021-20793
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-20793
+Untrusted search path vulnerability in the installer of Sony Audio USB Driver V1.10 and prior and the installer of HAP Music Transfer Ver.1.3.0 and prior allows an attacker to gain privileges and execute arbitrary code via a Trojan horse DLL in an unspecified directory.
+
+23. CVE-2021-39219
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-39219
+Wasmtime is an open source runtime for WebAssembly & WASI. Wasmtime before version 0.30.0 is affected by a type confusion vulnerability. As a Rust library the `wasmtime` crate clearly marks which functions are safe and which are `unsafe`, guaranteeing that if consumers never use `unsafe` then it should not be possible to have memory unsafety issues in their embeddings of Wasmtime. An issue was discovered in the safe API of `Linker::func_*` APIs. These APIs were previously not sound when one `Engine` was used to create the `Linker` and then a different `Engine` was used to create a `Store` and then the `Linker` was used to instantiate a module into that `Store`. Cross-`Engine` usage of functions is not supported in Wasmtime and this can result in type confusion of function pointers, resulting in being able to safely call a function with the wrong type. Triggering this bug requires using at least two `Engine` values in an embedding and then additionally using two different values with a `Linker` (one at the creation time of the `Linker` and another when instantiating a module with the `Linker`). It's expected that usage of more-than-one `Engine` in an embedding is relatively rare since an `Engine` is intended to be a globally shared resource, so the expectation is that the impact of this issue is relatively small. The fix implemented is to change this behavior to `panic!()` in Rust instead of silently allowing it. Using different `Engine` instances with a `Linker` is a programmer bug that `wasmtime` catches at runtime. This bug has been patched and users should upgrade to Wasmtime version 0.30.0. If you cannot upgrade Wasmtime and are using more than one `Engine` in your embedding it's recommended to instead use only one `Engine` for the entire program if possible. An `Engine` is designed to be a globally shared resource that is suitable to have only one for the lifetime of an entire process. If using multiple `Engine`s is required then code should be audited to ensure that `Linker` is only used with one `Engine`.
+
+24. CVE-2021-41129
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-41129
+Pterodactyl is an open-source game server management panel built with PHP 7, React, and Go. A malicious user can modify the contents of a `confirmation_token` input during the two-factor authentication process to reference a cache value not associated with the login attempt. In rare cases this can allow a malicious actor to authenticate as a random user in the Panel. The malicious user must target an account with two-factor authentication enabled, and then must provide a correct two-factor authentication token before being authenticated as that user. Due to a validation flaw in the logic handling user authentication during the two-factor authentication process a malicious user can trick the system into loading credentials for an arbitrary user by modifying the token sent to the server. This authentication flaw is present in the `LoginCheckpointController@__invoke` method which handles two-factor authentication for a user. This controller looks for a request input parameter called `confirmation_token` which is expected to be a 64 character random alpha-numeric string that references a value within the Panel's cache containing a `user_id` value. This value is then used to fetch the user that attempted to login, and lookup their two-factor authentication token. Due to the design of this system, any element in the cache that contains only digits could be referenced by a malicious user, and whatever value is stored at that position would be used as the `user_id`. There are a few different areas of the Panel that store values into the cache that are integers, and a user who determines what those cache keys are could pass one of those keys which would cause this code pathway to reference an arbitrary user. At its heart this is a high-risk login bypass vulnerability. However, there are a few additional conditions that must be met in order for this to be successfully executed, notably: 1.) The account referenced by the malicious cache key must have two-factor authentication enabled. An account without two-factor authentication would cause an exception to be triggered by the authentication logic, thusly exiting this authentication flow. 2.) Even if the malicious user is able to reference a valid cache key that references a valid user account with two-factor authentication, they must provide a valid two-factor authentication token. However, due to the design of this endpoint once a valid user account is found with two-factor authentication enabled there is no rate-limiting present, thusly allowing an attacker to brute force combinations until successful. This leads to a third condition that must be met: 3.) For the duration of this attack sequence the cache key being referenced must continue to exist with a valid `user_id` value. Depending on the specific key being used for this attack, this value may disappear quickly, or be changed by other random user interactions on the Panel, outside the control of the attacker. In order to mitigate this vulnerability the underlying authentication logic was changed to use an encrypted session store that the user is therefore unable to control the value of. This completely removed the use of a user-controlled value being used. In addition, the code was audited to ensure this type of vulnerability is not present elsewhere.
+
+25. CVE-2021-3882
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-3882
+LedgerSMB does not set the 'Secure' attribute on the session authorization cookie when the client uses HTTPS and the LedgerSMB server is behind a reverse proxy. By tricking a user to use an unencrypted connection (HTTP), an attacker may be able to obtain the authentication data by capturing network traffic. LedgerSMB 1.8 and newer switched from Basic authentication to using cookie authentication with encrypted cookies. Although an attacker can't access the information inside the cookie, nor the password of the user, possession of the cookie is enough to access the application as the user from which the cookie has been obtained. In order for the attacker to obtain the cookie, first of all the server must be configured to respond to unencrypted requests, the attacker must be suitably positioned to eavesdrop on the network traffic between the client and the server *and* the user must be tricked into using unencrypted HTTP traffic. Proper audit control and separation of duties limit Integrity impact of the attack vector. Users of LedgerSMB 1.8 are urged to upgrade to known-fixed versions. Users of LedgerSMB 1.7 or 1.9 are unaffected by this vulnerability and don't need to take action. As a workaround, users may configure their Apache or Nginx reverse proxy to add the Secure attribute at the network boundary instead of relying on LedgerSMB. For Apache, please refer to the 'Header always edit' configuration command in the mod_headers module. For Nginx, please refer to the 'proxy_cookie_flags' configuration command.
+
+26. CVE-2021-35576
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-35576
+Vulnerability in the Oracle Database Enterprise Edition Unified Audit component of Oracle Database Server. Supported versions that are affected are 12.1.0.2, 12.2.0.1 and 19c. Easily exploitable vulnerability allows high privileged attacker having Local Logon privilege with network access via Oracle Net to compromise Oracle Database Enterprise Edition Unified Audit. Successful attacks of this vulnerability can result in unauthorized update, insert or delete access to some of Oracle Database Enterprise Edition Unified Audit accessible data. CVSS 3.1 Base Score 2.7 (Integrity impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:N).
+
+27. CVE-2021-41309
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-41309
+Affected versions of Atlassian Jira Server and Data Center allow a user who has had their Jira Service Management access revoked to export audit logs of another user's Jira Service Management project via a Broken Authentication vulnerability in the /plugins/servlet/audit/resource endpoint. The affected versions of Jira Server and Data Center are before version 8.19.1.
+
+28. CVE-2021-44697
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-44697
+Adobe Audition versions 14.4 (and earlier), and 22.0 (and earlier)are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious MOV file.
+
+29. CVE-2021-44698
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-44698
+Adobe Audition versions 14.4 (and earlier), and 22.0 (and earlier)are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious MP4 file.
+
+30. CVE-2021-44699
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-44699
+Adobe Audition versions 14.4 (and earlier), and 22.0 (and earlier)are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious MP4 file.
+
+31. CVE-2021-21325
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-21325
+GLPI is an open-source asset and IT management software package that provides ITIL Service Desk features, licenses tracking and software auditing. In GLPI before version 9.5.4 a new budget type can be defined by user. This input is not correctly filtered. This results in a cross-site scripting attack. To exploit this endpoint attacker need to be authenticated. This is fixed in version 9.5.4.
+
+32. CVE-2021-0565
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-0565
+In wrapUserThread of AudioStream.cpp, there is a possible use after free due to a race condition. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11Android ID: A-174801970
+
+33. CVE-2021-1003
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-1003
+In adjustStreamVolume of AudioService.java, there is a possible way for unprivileged app to change audio stream volume due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-12Android ID: A-189857506
+
+34. CVE-2021-1018
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-1018
+In adjustStreamVolume of AudioService.java, there is a possible way to determine whether an app is installed, without query permissions, due to side channel information disclosure. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-12Android ID: A-194110891
+
+35. CVE-2021-20278
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-20278
+An authentication bypass vulnerability was found in Kiali in versions before 1.31.0 when the authentication strategy `OpenID` is used. When RBAC is enabled, Kiali assumes that some of the token validation is handled by the underlying cluster. When OpenID `implicit flow` is used with RBAC turned off, this token validation doesn't occur, and this allows a malicious user to bypass the authentication.
+
+36. CVE-2021-3495
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-3495
+An incorrect access control flaw was found in the kiali-operator in versions before 1.33.0 and before 1.24.7. This flaw allows an attacker with a basic level of access to the cluster (to deploy a kiali operand) to use this vulnerability and deploy a given image to anywhere in the cluster, potentially gaining access to privileged service account tokens. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.
+
+37. CVE-2021-47639
+Fecha: 2021
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47639
+in the linux kernel, the following vulnerability has been resolved: kvm: x86/mmu: zap _all_ roots when unmapping gfn range in tdp mmu zap both valid and invalid roots when zapping/unmapping a gfn range, as kvm must ensure it holds no references to the freed page after returning from the unmap operation. most notably, the tdp mmu doesn't zap invalid roots in mmu_notifier callbacks. this leads to use-after-free and other issues if the mmu_notifier runs to completion while an invalid root zapper yields as kvm fails to honor the requirement that there must be _no_ references to the page after the mmu_notifier returns. the bug is most easily reproduced by hacking kvm to cause a collision between set_nx_huge_pages() and kvm_mmu_notifier_release(), but the bug exists between kvm_mmu_notifier_invalidate_range_start() and memslot updates as well. invalidating a root ensures pages aren't accessible by the guest, and kvm won't read or write page data itself, but kvm will trigger e.g. kvm_set_pfn_dirty() when zapping sptes, and thus completing a zap of an invalid root _after_ the mmu_notifier returns is fatal. warning: cpu: 24 pid: 1496 at arch/x86/kvm/../../../virt/kvm/kvm_main.c:173 [kvm] rip: 0010:kvm_is_zone_device_pfn+0x96/0xa0 [kvm] call trace: <task> kvm_set_pfn_dirty+0xa8/0xe0 [kvm] __handle_changed_spte+0x2ab/0x5e0 [kvm] __handle_changed_spte+0x2ab/0x5e0 [kvm] __handle_changed_spte+0x2ab/0x5e0 [kvm] zap_gfn_range+0x1f3/0x310 [kvm] kvm_tdp_mmu_zap_invalidated_roots+0x50/0x90 [kvm] kvm_mmu_zap_all_fast+0x177/0x1a0 [kvm] set_nx_huge_pages+0xb4/0x190 [kvm] param_attr_store+0x70/0x100 module_attr_store+0x19/0x30 kernfs_fop_write_iter+0x119/0x1b0 new_sync_write+0x11c/0x1b0 vfs_write+0x1cc/0x270 ksys_write+0x5f/0xe0 do_syscall_64+0x38/0xc0 entry_syscall_64_after_hwframe+0x44/0xae </task>
+
+38. CVE-2021-34388
+Fecha: 2021
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-34388
+bootloader contains a vulnerability in nvidia tegraboot where a potential heap overflow might allow an attacker to control all the ram after the heap block, leading to denial of service or code execution.
+
+39. CVE-2021-30118
+Fecha: 2021
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30118
+an attacker can upload files with the privilege of the web server process for kaseya vsa unified remote monitoring & management (rmm) 9.5.4.2149 and subsequently use these files to execute asp commands the api /systemtab/uploader.aspx is vulnerable to an unauthenticated arbitrary file upload leading to rce. an attacker can upload files with the privilege of the web server process and subsequently use these files to execute asp commands. detailed description --- given the following request: ``` post /systemtab/uploader.aspx?filename=shellz.aspx&pathdata=c%3a%5ckaseya%5cwebpages%5c&__requestvalidationtoken=ac1906a5-d511-47e3-8500-47cc4b0ec219&qqfile=shellz.aspx http/1.1 host: 192.168.1.194 cookie: sessionid=92812726; %5f%5frequestvalidationtoken=ac1906a5%2dd511%2d47e3%2d8500%2d47cc4b0ec219 content-length: 12 <%@ page language="c#" debug="true" validaterequest="false" %> <%@ import namespace="system.web.ui.webcontrols" %> <%@ import namespace="system.diagnostics" %> <%@ import namespace="system.io" %> <%@ import namespace="system" %> <%@ import namespace="system.data" %> <%@ import namespace="system.data.sqlclient" %> <%@ import namespace="system.security.accesscontrol" %> <%@ import namespace="system.security.principal" %> <%@ import namespace="system.collections.generic" %> <%@ import namespace="system.collections" %> <script runat="server"> private const string password = "pass"; // the password ( pass ) private const string style = "dark"; // the style ( light / dark ) protected void page_load(object sender, eventargs e) { //this.remote(password); this.login(password); this.style(); this.serverinfo(); <snip> ``` the attacker can control the name of the file written via the qqfile parameter and the location of the file written via the pathdata parameter. even though the call requires that a sessionid cookie is passed we have determined that the sessionid is not actually validated and any numeric value is accepted as valid. security issues discovered --- * a sessionid cookie is required by /systemtab/uploader.aspx, but is not actually validated, allowing an attacker to bypass authentication * /systemtab/uploader.aspx allows an attacker to create a file with arbitrary content in any place the webserver has write access * the web server process has write access to the webroot where the attacker can execute it by requesting the url of the newly created file. impact --- this arbitrary file upload allows an attacker to place files of his own choosing on any location on the hard drive of the server the webserver process has access to, including (but not limited to) the webroot. if the attacker uploads files with code to the webroot (e.g. aspx code) he can then execute this code in the context of the webserver to breach either the integrity, confidentiality, or availability of the system or to steal credentials of other users. in other words, this can lead to a full system compromise.
+
+40. CVE-2021-25101
+Fecha: 2021
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-25101
+the anti-malware security and brute-force firewall wordpress plugin before 4.20.94 does not sanitise and escape the post data before outputting it back in attributes of an admin page, leading to a reflected cross-site scripting. due to the presence of specific parameter value, available to admin users, this can only be exploited by an admin against another admin user.
+
+41. CVE-2021-23880
+Fecha: 2021
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-23880
+improper access control in attribute in mcafee endpoint security (ens) for windows prior to 10.7.0 february 2021 update allows authenticated local administrator user to perform an uninstallation of the anti-malware engine via the running of a specific command with the correct parameters.
+
+42. CVE-2021-47431
+Fecha: 2021
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47431
+in the linux kernel, the following vulnerability has been resolved: drm/amdgpu: fix gart.bo pin_count leak gmc_v{9,10}_0_gart_disable() isn't called matched with correspoding gart_enbale function in sriov case. this will lead to gart.bo pin_count leak on driver unload.
+
+43. CVE-2021-20587
+Fecha: 2021
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-20587
+Heap-based buffer overflow vulnerability in Mitsubishi Electric FA Engineering Software (CPU Module Logging Configuration Tool versions 1.112R and prior, CW Configurator versions 1.011M and prior, Data Transfer versions 3.44W and prior, EZSocket versions 5.4 and prior, FR Configurator all versions, FR Configurator SW3 all versions, FR Configurator2 versions 1.24A and prior, GT Designer3 Version1(GOT1000) versions 1.250L and prior, GT Designer3 Version1(GOT2000) versions 1.250L and prior, GT SoftGOT1000 Version3 versions 3.245F and prior, GT SoftGOT2000 Version1 versions 1.250L and prior, GX Configurator-DP versions 7.14Q and prior, GX Configurator-QP all versions, GX Developer versions 8.506C and prior, GX Explorer all versions, GX IEC Developer all versions, GX LogViewer versions 1.115U and prior, GX RemoteService-I all versions, GX Works2 versions 1.597X and prior, GX Works3 versions 1.070Y and prior, iQ Monozukuri ANDON (Data Transfer) all versions, iQ Monozukuri Process Remote Monitoring (Data Transfer) all versions, M_CommDTM-HART all versions, M_CommDTM-IO-Link versions 1.03D and prior, MELFA-Works versions 4.4 and prior, MELSEC WinCPU Setting Utility all versions, MELSOFT EM Software Development Kit (EM Configurator) versions 1.015R and prior, MELSOFT Navigator versions 2.74C and prior, MH11 SettingTool Version2 versions 2.004E and prior, MI Configurator versions 1.004E and prior, MT Works2 versions 1.167Z and prior, MX Component versions 5.001B and prior, Network Interface Board CC IE Control utility versions 1.29F and prior, Network Interface Board CC IE Field Utility versions 1.16S and prior, Network Interface Board CC-Link Ver.2 Utility versions 1.23Z and prior, Network Interface Board MNETH utility versions 34L and prior, PX Developer versions 1.53F and prior, RT ToolBox2 versions 3.73B and prior, RT ToolBox3 versions 1.82L and prior, Setting/monitoring tools for the C Controller module (SW4PVC-CCPU) versions 4.12N and prior and SLMP Data Collector versions 1.04E and prior) allows a remote unauthenticated attacker to cause a DoS condition of the software products, and possibly to execute a malicious program on the personal computer running the software products although it has not been reproduced, by spoofing MELSEC, GOT or FREQROL and returning crafted reply packets.
+
+44. CVE-2021-20588
+Fecha: 2021
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-20588
+Improper handling of length parameter inconsistency vulnerability in Mitsubishi Electric FA Engineering Software(CPU Module Logging Configuration Tool versions 1.112R and prior, CW Configurator versions 1.011M and prior, Data Transfer versions 3.44W and prior, EZSocket versions 5.4 and prior, FR Configurator all versions, FR Configurator SW3 all versions, FR Configurator2 versions 1.24A and prior, GT Designer3 Version1(GOT1000) versions 1.250L and prior, GT Designer3 Version1(GOT2000) versions 1.250L and prior, GT SoftGOT1000 Version3 versions 3.245F and prior, GT SoftGOT2000 Version1 versions 1.250L and prior, GX Configurator-DP versions 7.14Q and prior, GX Configurator-QP all versions, GX Developer versions 8.506C and prior, GX Explorer all versions, GX IEC Developer all versions, GX LogViewer versions 1.115U and prior, GX RemoteService-I all versions, GX Works2 versions 1.597X and prior, GX Works3 versions 1.070Y and prior, iQ Monozukuri ANDON (Data Transfer) all versions, iQ Monozukuri Process Remote Monitoring (Data Transfer) all versions, M_CommDTM-HART all versions, M_CommDTM-IO-Link versions 1.03D and prior, MELFA-Works versions 4.4 and prior, MELSEC WinCPU Setting Utility all versions, MELSOFT EM Software Development Kit (EM Configurator) versions 1.015R and prior, MELSOFT Navigator versions 2.74C and prior, MH11 SettingTool Version2 versions 2.004E and prior, MI Configurator versions 1.004E and prior, MT Works2 versions 1.167Z and prior, MX Component versions 5.001B and prior, Network Interface Board CC IE Control utility versions 1.29F and prior, Network Interface Board CC IE Field Utility versions 1.16S and prior, Network Interface Board CC-Link Ver.2 Utility versions 1.23Z and prior, Network Interface Board MNETH utility versions 34L and prior, PX Developer versions 1.53F and prior, RT ToolBox2 versions 3.73B and prior, RT ToolBox3 versions 1.82L and prior, Setting/monitoring tools for the C Controller module (SW4PVC-CCPU) versions 4.12N and prior and SLMP Data Collector versions 1.04E and prior) allows a remote unauthenticated attacker to cause a DoS condition of the software products, and possibly to execute a malicious program on the personal computer running the software products although it has not been reproduced, by spoofing MELSEC, GOT or FREQROL and returning crafted reply packets.
+
+45. CVE-2021-20595
+Fecha: 2021
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-20595
+Improper Restriction of XML External Entity Reference vulnerability in Mitsubishi Electric Air Conditioning System/Centralized Controllers (G-50A Ver.3.35 and prior, GB-50A Ver.3.35 and prior, GB-24A Ver.9.11 and prior, AG-150A-A Ver.3.20 and prior, AG-150A-J Ver.3.20 and prior, GB-50ADA-A Ver.3.20 and prior, GB-50ADA-J Ver.3.20 and prior, EB-50GU-A Ver 7.09 and prior, EB-50GU-J Ver 7.09 and prior, AE-200A Ver 7.93 and prior, AE-200E Ver 7.93 and prior, AE-50A Ver 7.93 and prior, AE-50E Ver 7.93 and prior, EW-50A Ver 7.93 and prior, EW-50E Ver 7.93 and prior, TE-200A Ver 7.93 and prior, TE-50A Ver 7.93 and prior, TW-50A Ver 7.93 and prior, CMS-RMD-J Ver.1.30 and prior), Air Conditioning System/Expansion Controllers (PAC-YG50ECA Ver.2.20 and prior) and Air Conditioning System/BM adapter(BAC-HD150 Ver.2.21 and prior) allows a remote unauthenticated attacker to disclose some of data in the air conditioning system or cause a DoS condition by sending specially crafted packets.
+
+46. CVE-2021-20593
+Fecha: 2021
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-20593
+Incorrect Implementation of Authentication Algorithm in Mitsubishi Electric Air Conditioning System/Centralized Controllers (G-50A Ver.2.50 to Ver. 3.35, GB-50A Ver.2.50 to Ver. 3.35, AG-150A-A Ver.3.20 and prior, AG-150A-J Ver.3.20 and prior, GB-50ADA-A Ver.3.20 and prior, GB-50ADA-J Ver.3.20 and prior, EB-50GU-A Ver 7.09 and prior, EB-50GU-J Ver 7.09 and prior, AE-200A Ver 7.93 and prior, AE-200E Ver 7.93 and prior, AE-50A Ver 7.93 and prior, AE-50E Ver 7.93 and prior, EW-50A Ver 7.93 and prior, EW-50E Ver 7.93 and prior, TE-200A Ver 7.93 and prior, TE-50A Ver 7.93 and prior, TW-50A Ver 7.93 and prior, CMS-RMD-J Ver.1.30 and prior) and Air Conditioning System/Expansion Controllers (PAC-YG50ECA Ver.2.20 and prior) allows a remote authenticated attacker to impersonate administrators to disclose configuration information of the air conditioning system and tamper information (e.g. operation information and configuration of air conditioning system) by exploiting this vulnerability.
+
+47. CVE-2021-20594
+Fecha: 2021
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-20594
+Exposure of Sensitive Information to an Unauthorized Actor vulnerability in Mitsubishi Electric MELSEC iQ-R series Safety CPU modules R08/16/32/120SFCPU firmware versions "26" and prior and Mitsubishi Electric MELSEC iQ-R series SIL2 Process CPU modules R08/16/32/120PSFCPU firmware versions "11" and prior allows a remote unauthenticated attacker to acquire legitimate user names registered in the module via brute-force attack on user names.
+
+48. CVE-2021-20597
+Fecha: 2021
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-20597
+Insufficiently Protected Credentials vulnerability in Mitsubishi Electric MELSEC iQ-R series Safety CPU modules R08/16/32/120SFCPU firmware versions "26" and prior and Mitsubishi Electric MELSEC iQ-R series SIL2 Process CPU modules R08/16/32/120PSFCPU firmware versions "11" and prior allows a remote unauthenticated attacker to login to the target unauthorizedly by sniffing network traffic and obtaining credentials when registering user information in the target or changing a password.
+
+49. CVE-2021-20609
+Fecha: 2021
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-20609
+Uncontrolled Resource Consumption vulnerability in Mitsubishi Electric MELSEC iQ-R Series R00/01/02CPU, MELSEC iQ-R Series R04/08/16/32/120(EN)CPU, MELSEC iQ-R Series R08/16/32/120SFCPU, MELSEC iQ-R Series R08/16/32/120PCPU, MELSEC iQ-R Series R08/16/32/120PSFCPU, MELSEC iQ-R Series R16/32/64MTCPU, MELSEC iQ-R Series R12CCPU-V, MELSEC Q Series Q03UDECPU, MELSEC Q Series Q04/06/10/13/20/26/50/100UDEHCPU, MELSEC Q Series Q03/04/06/13/26UDVCPU, MELSEC Q Series Q04/06/13/26UDPVCPU, MELSEC Q Series Q12DCCPU-V, MELSEC Q Series Q24DHCCPU-V(G), MELSEC Q Series Q24/26DHCCPU-LS, MELSEC Q Series MR-MQ100, MELSEC Q Series Q172/173DCPU-S1, MELSEC Q Series Q172/173DSCPU, MELSEC Q Series Q170MCPU, MELSEC Q Series Q170MSCPU(-S1), MELSEC L Series L02/06/26CPU(-P), MELSEC L Series L26CPU-(P)BT and MELIPC Series MI5122-VW allows a remote unauthenticated attacker to cause a denial-of-service (DoS) condition by sending specially crafted packets. System reset is required for recovery.
+
+50. CVE-2021-20610
+Fecha: 2021
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-20610
+Improper Handling of Length Parameter Inconsistency vulnerability in Mitsubishi Electric MELSEC iQ-R Series R00/01/02CPU, MELSEC iQ-R Series R04/08/16/32/120(EN)CPU, MELSEC iQ-R Series R08/16/32/120SFCPU, MELSEC iQ-R Series R08/16/32/120PCPU, MELSEC iQ-R Series R08/16/32/120PSFCPU, MELSEC iQ-R Series R16/32/64MTCPU, MELSEC iQ-R Series R12CCPU-V, MELSEC Q Series Q03UDECPU, MELSEC Q Series Q04/06/10/13/20/26/50/100UDEHCPU, MELSEC Q Series Q03/04/06/13/26UDVCPU, MELSEC Q Series Q04/06/13/26UDPVCPU, MELSEC Q Series Q12DCCPU-V, MELSEC Q Series Q24DHCCPU-V(G), MELSEC Q Series Q24/26DHCCPU-LS, MELSEC Q Series MR-MQ100, MELSEC Q Series Q172/173DCPU-S1, MELSEC Q Series Q172/173DSCPU, MELSEC Q Series Q170MCPU, MELSEC Q Series Q170MSCPU(-S1), MELSEC L Series L02/06/26CPU(-P), MELSEC L Series L26CPU-(P)BT and MELIPC Series MI5122-VW allows a remote unauthenticated attacker to cause a denial-of-service (DoS) condition by sending specially crafted packets. System reset is required for recovery.
+
+51. CVE-2021-20611
+Fecha: 2021
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-20611
+Improper Input Validation vulnerability in Mitsubishi Electric MELSEC iQ-R Series R00/01/02CPU, MELSEC iQ-R Series R04/08/16/32/120(EN)CPU, MELSEC iQ-R Series R08/16/32/120SFCPU, MELSEC iQ-R Series R08/16/32/120PCPU, MELSEC iQ-R Series R08/16/32/120PSFCPU, MELSEC iQ-R Series R16/32/64MTCPU, MELSEC iQ-R Series R12CCPU-V, MELSEC Q Series Q03UDECPU, MELSEC Q Series Q04/06/10/13/20/26/50/100UDEHCPU, MELSEC Q Series Q03/04/06/13/26UDVCPU, MELSEC Q Series Q04/06/13/26UDPVCPU, MELSEC Q Series Q12DCCPU-V, MELSEC Q Series Q24DHCCPU-V(G), MELSEC Q Series Q24/26DHCCPU-LS, MELSEC Q Series MR-MQ100, MELSEC Q Series Q172/173DCPU-S1, MELSEC Q Series Q172/173DSCPU, MELSEC Q Series Q170MCPU, MELSEC Q Series Q170MSCPU(-S1), MELSEC L Series L02/06/26CPU(-P), MELSEC L Series L26CPU-(P)BT and MELIPC Series MI5122-VW allows a remote unauthenticated attacker to cause a denial-of-service (DoS) condition by sending specially crafted packets. System reset is required for recovery.
+
+52. CVE-2021-20606
+Fecha: 2021
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-20606
+Out-of-bounds Read vulnerability in Mitsubishi Electric GX Works2 versions 1.606G and prior, Mitsubishi Electric MELSOFT Navigator versions 2.84N and prior and Mitsubishi Electric EZSocket versions 5.4 and prior allows an attacker to cause a DoS condition in the software by getting a user to open malicious project file specially crafted by an attacker.
+
+53. CVE-2021-20607
+Fecha: 2021
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-20607
+Integer Underflow vulnerability in Mitsubishi Electric GX Works2 versions 1.606G and prior, Mitsubishi Electric MELSOFT Navigator versions 2.84N and prior and Mitsubishi Electric EZSocket versions 5.4 and prior allows an attacker to cause a DoS condition in the software by getting a user to open malicious project file specially crafted by an attacker.
+
+54. CVE-2021-20608
+Fecha: 2021
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-20608
+Improper Handling of Length Parameter Inconsistency vulnerability in Mitsubishi Electric GX Works2 versions 1.606G and prior allows a remote unauthenticated attacker to cause a DoS condition in GX Works2 by getting GX Works2 to read a tampered program file from a Mitsubishi Electric PLC by sending malicious crafted packets to tamper with the program file.
+
+55. CVE-2021-20598
+Fecha: 2021
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20598
+overly restrictive account lockout mechanism vulnerability in mitsubishi electric melsec iq-r series cpu modules (r08/16/32/120sfcpu all versions, r08/16/32/120psfcpu all versions) allows a remote unauthenticated attacker to lockout a legitimate user by continuously trying login with incorrect password.
+
+56. CVE-2021-20591
+Fecha: 2021
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20591
+uncontrolled resource consumption vulnerability in mitsubishi electric melsec iq-r series cpu modules (r00/01/02cpu all versions, r04/08/16/32/120(en)cpu all versions, r08/16/32/120sfcpu all versions, r08/16/32/120pcpu all versions, r08/16/32/120psfcpu all versions) allows a remote unauthenticated attacker to prevent legitimate clients from connecting to the melsoft transmission port (tcp/ip) by not closing a connection properly, which may lead to a denial of service (dos) condition.
+
+57. CVE-2020-36052
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2020-36052
+Directory traversal vulnerability in post-edit.php in MiniCMS V1.10 allows remote attackers to include and execute arbitrary files via the state parameter.
+
+58. CVE-2021-21287
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-21287
+MinIO is a High Performance Object Storage released under Apache License v2.0. In MinIO before version RELEASE.2021-01-30T00-20-58Z there is a server-side request forgery vulnerability. The target application may have functionality for importing data from a URL, publishing data to a URL, or otherwise reading data from a URL that can be tampered with. The attacker modifies the calls to this functionality by supplying a completely different URL or by manipulating how URLs are built (path traversal etc.). In a Server-Side Request Forgery (SSRF) attack, the attacker can abuse functionality on the server to read or update internal resources. The attacker can supply or modify a URL which the code running on the server will read or submit data, and by carefully selecting the URLs, the attacker may be able to read server configuration such as AWS metadata, connect to internal services like HTTP enabled databases, or perform post requests towards internal services which are not intended to be exposed. This is fixed in version RELEASE.2021-01-30T00-20-58Z, all users are advised to upgrade. As a workaround you can disable the browser front-end with "MINIO_BROWSER=off" environment variable.
+
+59. CVE-2021-21294
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-21294
+Http4s (http4s-blaze-server) is a minimal, idiomatic Scala interface for HTTP services. Http4s before versions 0.21.17, 0.22.0-M2, and 1.0.0-M14 have a vulnerability which can lead to a denial-of-service. Blaze-core, a library underlying http4s-blaze-server, accepts connections unboundedly on its selector pool. This has the net effect of amplifying degradation in services that are unable to handle their current request load, since incoming connections are still accepted and added to an unbounded queue. Each connection allocates a socket handle, which drains a scarce OS resource. This can also confound higher level circuit breakers which work based on detecting failed connections. http4s provides a general "MaxActiveRequests" middleware mechanism for limiting open connections, but it is enforced inside the Blaze accept loop, after the connection is accepted and the socket opened. Thus, the limit only prevents the number of connections which can be simultaneously processed, not the number of connections which can be held open. In 0.21.17, 0.22.0-M2, and 1.0.0-M14, a new "maxConnections" property, with a default value of 1024, has been added to the `BlazeServerBuilder`. Setting the value to a negative number restores unbounded behavior, but is strongly disrecommended. The NIO2 backend does not respect `maxConnections`. Its use is now deprecated in http4s-0.21, and the option is removed altogether starting in http4s-0.22. There are several possible workarounds described in the refrenced GitHub Advisory GHSA-xhv5-w9c5-2r2w.
+
+60. CVE-2020-27866
+Fecha: 2021
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2020-27866
+This vulnerability allows network-adjacent attackers to bypass authentication on affected installations of NETGEAR R6020, R6080, R6120, R6220, R6260, R6700v2, R6800, R6900v2, R7450, JNR3210, WNR2020, Nighthawk AC2100, and Nighthawk AC2400 routers. Authentication is not required to exploit this vulnerability. The specific flaw exists within the mini_httpd service, which listens on TCP port 80 by default. The issue results from incorrect string matching logic when accessing protected pages. An attacker can leverage this in conjunction with other vulnerabilities to execute code in the context of root. Was ZDI-CAN-11355.
+
+61. CVE-2020-27867
+Fecha: 2021
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2020-27867
+This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of NETGEAR R6020, R6080, R6120, R6220, R6260, R6700v2, R6800, R6900v2, R7450, JNR3210, WNR2020, Nighthawk AC2100, and Nighthawk AC2400 routers. Although authentication is required to exploit this vulnerability, the existing authentication mechanism can be bypassed. The specific flaw exists within the mini_httpd service, which listens on TCP port 80 by default. When parsing the funjsq_access_token parameter, the process does not properly validate a user-supplied string before using it to execute a system call. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-11653.
+
+62. CVE-2021-21360
+Fecha: 2021
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-21360
+Products.GenericSetup is a mini-framework for expressing the configured state of a Zope Site as a set of filesystem artifacts. In Products.GenericSetup before version 2.1.1 there is an information disclosure vulnerability - anonymous visitors may view log and snapshot files generated by the Generic Setup Tool. The problem has been fixed in version 2.1.1. Depending on how you have installed Products.GenericSetup, you should change the buildout version pin to 2.1.1 and re-run the buildout, or if you used pip simply do pip install `"Products.GenericSetup>=2.1.1"`.
+
+63. CVE-2021-21381
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-21381
+Flatpak is a system for building, distributing, and running sandboxed desktop applications on Linux. In Flatpack since version 0.9.4 and before version 1.10.2 has a vulnerability in the "file forwarding" feature which can be used by an attacker to gain access to files that would not ordinarily be allowed by the app's permissions. By putting the special tokens `@@` and/or `@@u` in the Exec field of a Flatpak app's .desktop file, a malicious app publisher can trick flatpak into behaving as though the user had chosen to open a target file with their Flatpak app, which automatically makes that file available to the Flatpak app. This is fixed in version 1.10.2. A minimal solution is the first commit "`Disallow @@ and @@U usage in desktop files`". The follow-up commits "`dir: Reserve the whole @@ prefix`" and "`dir: Refuse to export .desktop files with suspicious uses of @@ tokens`" are recommended, but not strictly required. As a workaround, avoid installing Flatpak apps from untrusted sources, or check the contents of the exported `.desktop` files in `exports/share/applications/*.desktop` (typically `~/.local/share/flatpak/exports/share/applications/*.desktop` and `/var/lib/flatpak/exports/share/applications/*.desktop`) to make sure that literal filenames do not follow `@@` or `@@u`.
+
+64. CVE-2021-21390
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-21390
+MinIO is an open-source high performance object storage service and it is API compatible with Amazon S3 cloud storage service. In MinIO before version RELEASE.2021-03-17T02-33-02Z, there is a vulnerability which enables MITM modification of request bodies that are meant to have integrity guaranteed by chunk signatures. In a PUT request using aws-chunked encoding, MinIO ordinarily verifies signatures at the end of a chunk. This check can be skipped if the client sends a false chunk size that is much greater than the actual data sent: the server accepts and completes the request without ever reaching the end of the chunk + thereby without ever checking the chunk signature. This is fixed in version RELEASE.2021-03-17T02-33-02Z. As a workaround one can avoid using "aws-chunked" encoding-based chunk signature upload requests instead use TLS. MinIO SDKs automatically disable chunked encoding signature when the server endpoint is configured with TLS.
+
+65. CVE-2021-21341
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-21341
+XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.16, there is vulnerability which may allow a remote attacker to allocate 100% CPU time on the target system depending on CPU type or parallel execution of such a payload resulting in a denial of service only by manipulating the processed input stream. No user is affected who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.16.
+
+66. CVE-2021-21342
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-21342
+XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.16, there is a vulnerability where the processed stream at unmarshalling time contains type information to recreate the formerly written objects. XStream creates therefore new instances based on these type information. An attacker can manipulate the processed input stream and replace or inject objects, that result in a server-side forgery request. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.16.
+
+67. CVE-2021-21343
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-21343
+XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.16, there is a vulnerability where the processed stream at unmarshalling time contains type information to recreate the formerly written objects. XStream creates therefore new instances based on these type information. An attacker can manipulate the processed input stream and replace or inject objects, that result in the deletion of a file on the local host. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.16.
+
+68. CVE-2021-21344
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-21344
+XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.16, there is a vulnerability which may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.16.
+
+69. CVE-2021-21345
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-21345
+XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.16, there is a vulnerability which may allow a remote attacker who has sufficient rights to execute commands of the host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.16.
+
+70. CVE-2021-21346
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-21346
+XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.16, there is a vulnerability which may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.16.
+
+71. CVE-2021-21347
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-21347
+XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.16, there is a vulnerability which may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.16.
+
+72. CVE-2021-21348
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-21348
+XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.16, there is a vulnerability which may allow a remote attacker to occupy a thread that consumes maximum CPU time and will never return. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.16.
+
+73. CVE-2021-21349
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-21349
+XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.16, there is a vulnerability which may allow a remote attacker to request data from internal resources that are not publicly available only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.16.
+
+74. CVE-2021-21350
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-21350
+XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.16, there is a vulnerability which may allow a remote attacker to execute arbitrary code only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.16.
+
+75. CVE-2021-21351
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-21351
+XStream is a Java library to serialize objects to XML and back again. In XStream before version 1.4.16, there is a vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the Security Framework, you will have to use at least version 1.4.16.
+
+76. CVE-2021-31607
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-31607
+In SaltStack Salt 2016.9 through 3002.6, a command injection vulnerability exists in the snapper module that allows for local privilege escalation on a minion. The attack requires that a file is created with a pathname that is backed up by snapper, and that the master calls the snapper.diff function (which executes popen unsafely).
+
+77. CVE-2021-32030
+Fecha: 2021
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-32030
+The administrator application on ASUS GT-AC2900 devices before 3.0.0.4.386.42643 and Lyra Mini before 3.0.0.4_384_46630 allows authentication bypass when processing remote input from an unauthenticated user, leading to unauthorized access to the administrator interface. This relates to handle_request in router/httpd/httpd.c and auth_check in web_hook.o. An attacker-supplied value of '\0' matches the device's default value of '\0' in some situations. Note: All versions of Lyra Mini and earlier which are unsupported (End-of-Life, EOL) are also affected by this vulnerability, Consumers can mitigate this vulnerability by disabling the remote access features from WAN.
+
+78. CVE-2021-29505
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-29505
+XStream is software for serializing Java objects to XML and back again. A vulnerability in XStream versions prior to 1.4.17 may allow a remote attacker has sufficient rights to execute commands of the host only by manipulating the processed input stream. No user who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types is affected. The vulnerability is patched in version 1.4.17.
+
+79. CVE-2021-35393
+Fecha: 2021
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-35393
+Realtek Jungle SDK version v2.x up to v3.4.14B provides a 'WiFi Simple Config' server that implements both UPnP and SSDP protocols. The binary is usually named wscd or mini_upnpd and is the successor to miniigd. The server is vulnerable to a stack buffer overflow vulnerability that is present due to unsafe parsing of the UPnP SUBSCRIBE/UNSUBSCRIBE Callback header. Successful exploitation of this vulnerability allows remote unauthenticated attackers to gain arbitrary code execution on the affected device.
+
+80. CVE-2021-39139
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-39139
+XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. A user is only affected if using the version out of the box with JDK 1.7u21 or below. However, this scenario can be adjusted easily to an external Xalan that works regardless of the version of the Java runtime. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.
+
+81. CVE-2021-39141
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-39141
+XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.
+
+82. CVE-2021-39144
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-39144
+XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker has sufficient rights to execute commands of the host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.
+
+83. CVE-2021-39145
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-39145
+XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.
+
+84. CVE-2021-39146
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-39146
+XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.
+
+85. CVE-2021-39147
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-39147
+XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.
+
+86. CVE-2021-39148
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-39148
+XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.
+
+87. CVE-2021-39149
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-39149
+XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.
+
+88. CVE-2021-39151
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-39151
+XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.
+
+89. CVE-2021-39153
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-39153
+XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream, if using the version out of the box with Java runtime version 14 to 8 or with JavaFX installed. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.
+
+90. CVE-2021-39154
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-39154
+XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to load and execute arbitrary code from a remote host only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.
+
+91. CVE-2021-39140
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-39140
+XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to allocate 100% CPU time on the target system depending on CPU type or parallel execution of such a payload resulting in a denial of service only by manipulating the processed input stream. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. XStream 1.4.18 uses no longer a blacklist by default, since it cannot be secured for general purpose.
+
+92. CVE-2021-39150
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-39150
+XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to request data from internal resources that are not publicly available only by manipulating the processed input stream with a Java runtime version 14 to 8. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the [Security Framework](https://x-stream.github.io/security.html#framework), you will have to use at least version 1.4.18.
+
+93. CVE-2021-39152
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-39152
+XStream is a simple library to serialize objects to XML and back again. In affected versions this vulnerability may allow a remote attacker to request data from internal resources that are not publicly available only by manipulating the processed input stream with a Java runtime version 14 to 8. No user is affected, who followed the recommendation to setup XStream's security framework with a whitelist limited to the minimal required types. If you rely on XStream's default blacklist of the [Security Framework](https://x-stream.github.io/security.html#framework), you will have to use at least version 1.4.18.
+
+94. CVE-2021-41170
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-41170
+neoan3-apps/template is a neoan3 minimal template engine. Versions prior to 1.1.1 have allowed for passing in closures directly into the template engine. As a result values that are callable are executed by the template engine. The issue arises if a value has the same name as a method or function in scope and can therefore be executed either by mistake or maliciously. In theory all users of the package are affected as long as they either deal with direct user input or database values. A multi-step attack on is therefore plausible. Version 1.1.1 has addressed this vulnerability. Unfortunately only working with hardcoded values is safe in prior versions. As this likely defeats the purpose of a template engine, please upgrade.
+
+95. CVE-2021-44043
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-44043
+An issue was discovered in UiPath App Studio 21.4.4. There is a persistent XSS vulnerability in the file-upload functionality for uploading icons when attempting to create new Apps. An attacker with minimal privileges in the application can build their own App and upload a malicious file containing an XSS payload, by uploading an arbitrary file and modifying the MIME type in a subsequent HTTP request. This then allows the file to be stored and retrieved from the server by other users in the same organization.
+
+96. CVE-2021-43083
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-43083
+Apache PLC4X - PLC4C (Only the C language implementation was effected) was vulnerable to an unsigned integer underflow flaw inside the tcp transport. Users should update to 0.9.1, which addresses this issue. However, in order to exploit this vulnerability, a user would have to actively connect to a mallicious device which could send a response with invalid content. Currently we consider the probability of this being exploited as quite minimal, however this could change in the future, especially with the industrial networks growing more and more together.
+
+97. CVE-2021-43858
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-43858
+MinIO is a Kubernetes native application for cloud storage. Prior to version `RELEASE.2021-12-27T07-23-18Z`, a malicious client can hand-craft an HTTP API call that allows for updating policy for a user and gaining higher privileges. The patch in version `RELEASE.2021-12-27T07-23-18Z` changes the accepted request body type and removes the ability to apply policy changes through this API. There is a workaround for this vulnerability: Changing passwords can be disabled by adding an explicit `Deny` rule to disable the API for users.
+
+98. CVE-2021-43729
+Fecha: 2021
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-43729
+pix-link mini router 28k.minirouter.20190211 was discovered to contain a stored cross-site scripting (xss) vulnerability due to an unsanitized security key parameter.
+
+99. CVE-2021-43728
+Fecha: 2021
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-43728
+pix-link mini router 28k.minirouter.20190211 was discovered to contain a stored cross-site scripting (xss) vulnerability due to an unsanitized ssid parameter.
+
+100. CVE-2021-41663
+Fecha: 2021
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-41663
+a cross-site scripting (xss) vulnerability exists in mini cms v1.11. the vulnerability exists in the article upload: post-edit.php page.
+
+101. CVE-2021-40475
+Fecha: 2021
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-40475
+windows cloud files mini filter driver information disclosure vulnerability
+
+102. CVE-2021-35973
+Fecha: 2021
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35973
+netgear wac104 devices before 1.0.4.15 are affected by an authentication bypass vulnerability in /usr/sbin/mini_httpd, allowing an unauthenticated attacker to invoke any action by adding the &currentsetting.htm substring to the http query, a related issue to cve-2020-27866. this directly allows the attacker to change the web ui password, and eventually to enable debug mode (telnetd) and gain a shell on the device as the admin limited-user account (however, escalation to root is simple because of weak permissions on the /etc/ directory).
+
+103. CVE-2021-33784
+Fecha: 2021
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-33784
+windows cloud files mini filter driver elevation of privilege vulnerability
+
+104. CVE-2021-31969
+Fecha: 2021
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-31969
+windows cloud files mini filter driver elevation of privilege vulnerability
+
+105. CVE-2021-31641
+Fecha: 2021
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-31641
+an unauthenticated xss vulnerability exists in several iot devices from chiyu technology, including bf-630, bf-450m, bf-430, bf-431, bf631-w, bf830-w, webpass, bf-mini-w, and semac due to a lack of sanitization when the http 404 message is generated.
+
+106. CVE-2021-25310
+Fecha: 2021
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-25310
+** unsupported when assigned ** the administration web interface on belkin linksys wrt160nl 1.0.04.002_us_20130619 devices allows remote authenticated attackers to execute system commands with root privileges via shell metacharacters in the ui_language post parameter to the apply.cgi form endpoint. this occurs in do_upgrade_post in mini_httpd. note: this vulnerability only affects products that are no longer supported by the maintainer
+
+107. CVE-2021-40849
+Fecha: 2021
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2021-40849
+In Mahara before 20.04.5, 20.10.3, 21.04.2, and 21.10.0, the account associated with a web services token is vulnerable to being exploited and logged into, resulting in information disclosure (at a minimum) and often escalation of privileges.
+
+108. CVE-2021-34435
+Fecha: 2021
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-34435
+in eclipse theia 0.3.9 to 1.8.1, the "mini-browser" extension allows a user to preview html files in an iframe inside the ide. but with the way it is made it is possible for a previewed html file to trigger an rce. this exploit only happens if a user previews a malicious file..
+

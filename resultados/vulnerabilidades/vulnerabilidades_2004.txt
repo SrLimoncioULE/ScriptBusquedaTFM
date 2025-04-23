@@ -1,0 +1,24 @@
+1. CVE-2004-0654
+Fecha: 2004
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2004-0654
+Unknown vulnerability in the Basic Security Module (BSM), when configured to audit either the Administrative (ad) or the System-Wide Administration (as) audit class in Solaris 7, 8, and 9, allows local users to cause a denial of service (kernel panic).
+
+2. CVE-2004-2247
+Fecha: 2004
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2004-2247
+Unknown vulnerability in the "admin of paypal email addresses" in AudienceConnect before 1.0.beta.21 has unknown impact and attack vectors.
+
+3. CVE-2003-0902
+Fecha: 2004
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2003-0902
+Unknown vulnerability in minimalist mailing list manager 2.4, 2.2, and possibly other versions, allows remote attackers to execute arbitrary commands.
+
+4. CVE-2004-2456
+Fecha: 2004
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2004-2456
+SQL injection vulnerability in index.php in miniBB 1.7f and earlier allows remote attackers to execute arbitrary SQL commands via the user parameter in a userinfo action.
+

@@ -1,0 +1,294 @@
+1. CVE-2010-0685
+Fecha: 2010
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2010-0685
+The design of the dialplan functionality in Asterisk Open Source 1.2.x, 1.4.x, and 1.6.x; and Asterisk Business Edition B.x.x and C.x.x, when using the ${EXTEN} channel variable and wildcard pattern matches, allows context-dependent attackers to inject strings into the dialplan using metacharacters that are injected when the variable is expanded, as demonstrated using the Dial application to process a crafted SIP INVITE message that adds an unintended outgoing channel leg.  NOTE: it could be argued that this is not a vulnerability in Asterisk, but a class of vulnerabilities that can occur in any program that uses this feature without the associated filtering functionality that is already available.
+
+2. CVE-2010-0854
+Fecha: 2010
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2010-0854
+Unspecified vulnerability in the Audit component in Oracle Database 9.2.0.8, 9.2.0.8DV, 10.1.0.5, 10.2.0.4, and 11.1.0.7 allows remote authenticated users to affect integrity, related to "SELECT, INSERT or DELETE on tables subject to auditing."
+
+3. CVE-2010-0480
+Fecha: 2010
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2010-0480
+Multiple stack-based buffer overflows in the MPEG Layer-3 audio codecs in Microsoft Windows 2000 SP4, XP SP2 and SP3, Server 2003 SP2, Vista Gold, SP1, and SP2, and Server 2008 Gold and SP2 allow remote attackers to execute arbitrary code via a crafted AVI file, aka "MPEG Layer-3 Audio Decoder Stack Overflow Vulnerability."
+
+4. CVE-2010-1634
+Fecha: 2010
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2010-1634
+Multiple integer overflows in audioop.c in the audioop module in Python 2.6, 2.7, 3.1, and 3.2 allow context-dependent attackers to cause a denial of service (application crash) via a large fragment, as demonstrated by a call to audioop.lin2lin with a long string in the first argument, leading to a buffer overflow.  NOTE: this vulnerability exists because of an incorrect fix for CVE-2008-3143.5.
+
+5. CVE-2010-2089
+Fecha: 2010
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2010-2089
+The audioop module in Python 2.7 and 3.2 does not verify the relationships between size arguments and byte string lengths, which allows context-dependent attackers to cause a denial of service (memory corruption and application crash) via crafted arguments, as demonstrated by a call to audioop.reverse with a one-byte string, a different vulnerability than CVE-2010-1634.
+
+6. CVE-2010-2612
+Fecha: 2010
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2010-2612
+Unspecified vulnerability in the HP OpenVMS Auditing feature in OpenVMS ALPHA 7.3-2, 8.2, and 8.3; and OpenVMS for Integrity Servers 8.3 AND 8.3-1H1; allows local users to obtain sensitive information via unknown vectors.
+
+7. CVE-2010-1973
+Fecha: 2010
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2010-1973
+Unspecified vulnerability in the Auditing subsystem in HP OpenVMS 8.3, 8.2, 7.3-2, and earlier on the ALPHA platform, and 8.3-1H1, 8.3, 8.2-1, and earlier on the Itanium platform, allows local users to gain privileges or obtain sensitive information via unknown vectors.
+
+8. CVE-2010-1882
+Fecha: 2010
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2010-1882
+Multiple buffer overflows in the MPEG Layer-3 Audio Codec for Microsoft DirectShow in l3codecx.ax in Microsoft Windows XP SP2 and SP3 and Server 2003 SP2 allow remote attackers to execute arbitrary code via an MPEG Layer-3 audio stream in (1) a crafted media file or (2) crafted streaming content, aka "MPEG Layer-3 Audio Decoder Buffer Overflow Vulnerability."
+
+9. CVE-2010-3125
+Fecha: 2010
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2010-3125
+Untrusted search path vulnerability in TeamMate Audit Management Software Suite 8.0 patch 2 allows local users, and possibly remote attackers, to execute arbitrary code and conduct DLL hijacking attacks via a Trojan horse mfc71enu.dll that is located in the same folder as a .tmx file.
+
+10. CVE-2010-4983
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-4983
+sql injection vulnerability in profile.php in iscripts cybermatch 1.0 allows remote attackers to execute arbitrary sql commands via the id parameter.
+
+11. CVE-2010-2142
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2142
+sql injection vulnerability in default.asp in cyberhost allows remote attackers to execute arbitrary sql commands via the id parameter.
+
+12. CVE-2010-3138
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3138
+untrusted search path vulnerability in the indeo codec in iac25_32.ax in microsoft windows xp sp3 allows local users to gain privileges via a trojan horse iacenc.dll file in the current working directory, as demonstrated by access through bs.player or media player classic to a directory that contains a .avi, .mka, .ra, or .ram file, aka "indeo codec insecure library loading vulnerability." note: some of these details are obtained from third party information.
+
+13. CVE-2010-5184
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5184
+** disputed ** race condition in zonealarm extreme security 9.1.507.000 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+14. CVE-2010-5183
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5183
+** disputed ** race condition in webroot internet security essentials 6.1.0.145 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+15. CVE-2010-5182
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5182
+** disputed ** race condition in virusbuster internet security suite 3.2 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+16. CVE-2010-5181
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5181
+** disputed ** race condition in vipre antivirus premium 4.0.3272 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+17. CVE-2010-5180
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5180
+** disputed ** race condition in vba32 personal 3.12.12.4 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+18. CVE-2010-5179
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5179
+** disputed ** race condition in trend micro internet security pro 2010 17.50.1647.0000 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+19. CVE-2010-5178
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5178
+** disputed ** race condition in threatfire 4.7.0.17 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+20. CVE-2010-5177
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5177
+** disputed ** race condition in sophos endpoint security and control 9.0.5 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: the vendor disputes this issue because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+21. CVE-2010-5176
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5176
+** disputed ** race condition in security shield 2010 13.0.16.313 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+22. CVE-2010-5175
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5175
+** disputed ** race condition in privatefirewall 7.0.20.37 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+23. CVE-2010-5174
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5174
+** disputed ** race condition in prevx 3.0.5.143 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+24. CVE-2010-5173
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5173
+** disputed ** race condition in pc tools firewall plus 6.0.0.88 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+25. CVE-2010-5172
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5172
+** disputed ** race condition in panda internet security 2010 15.01.00 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+26. CVE-2010-5171
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5171
+** disputed ** race condition in outpost security suite pro 6.7.3.3063.452.0726 and 7.0.3330.505.1221 beta on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+27. CVE-2010-5170
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5170
+** disputed ** race condition in online solutions security suite 1.5.14905.0 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+28. CVE-2010-5169
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5169
+** disputed ** race condition in online armor premium 4.0.0.35 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+29. CVE-2010-5168
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5168
+** disputed ** race condition in symantec norton internet security 2010 17.5.0.127 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+30. CVE-2010-5167
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5167
+** disputed ** race condition in norman security suite pro 8.0 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+31. CVE-2010-5166
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5166
+** disputed ** race condition in mcafee total protection 2010 10.0.580 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+32. CVE-2010-5165
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5165
+** disputed ** race condition in malware defender 2.6.0 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+33. CVE-2010-5164
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5164
+** disputed ** race condition in kingsoft personal firewall 9 plus 2009.05.07.70 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+34. CVE-2010-5163
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5163
+** disputed ** race condition in kaspersky internet security 2010 9.0.0.736 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+35. CVE-2010-5162
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5162
+** disputed ** race condition in g data totalcare 2010 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+36. CVE-2010-5161
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5161
+** disputed ** race condition in f-secure internet security 2010 10.00 build 246 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+37. CVE-2010-5160
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5160
+** disputed ** race condition in eset smart security 4.2.35.3 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+38. CVE-2010-5159
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5159
+** disputed ** race condition in dr.web security space pro 6.0.0.03100 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+39. CVE-2010-5158
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5158
+** disputed ** race condition in defensewall personal firewall 3.00 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+40. CVE-2010-5156
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5156
+** disputed ** race condition in ca internet security suite plus 2010 6.0.0.272 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+41. CVE-2010-5155
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5155
+** disputed ** race condition in blink professional 4.6.1 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+42. CVE-2010-5154
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5154
+** disputed ** race condition in bitdefender total security 2010 13.0.20.347 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+43. CVE-2010-5153
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5153
+** disputed ** race condition in avira premium security suite 10.0.0.536 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+44. CVE-2010-5152
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5152
+** disputed ** race condition in avg internet security 9.0.791 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+45. CVE-2010-5151
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5151
+** disputed ** race condition in avast! internet security 5.0.462 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+46. CVE-2010-5150
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5150
+** disputed ** race condition in 3d eqsecure professional edition 4.2 on windows xp allows local users to bypass kernel-mode hook handlers, and execute dangerous code that would otherwise be blocked by a handler but not blocked by signature-based malware detection, via certain user-space memory changes during hook-handler execution, aka an argument-switch attack or a khobe attack.  note: this issue is disputed by some third parties because it is a flaw in a protection mechanism for situations where a crafted program has already begun to execute.
+
+47. CVE-2010-3765
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3765
+mozilla firefox 3.5.x through 3.5.14 and 3.6.x through 3.6.11, thunderbird 3.1.6 before 3.1.6 and 3.0.x before 3.0.10, and seamonkey 2.x before 2.0.10, when javascript is enabled, allows remote attackers to execute arbitrary code via vectors related to nscssframeconstructor::contentappended, the appendchild method, incorrect index tracking, and the creation of multiple frames, which triggers memory corruption, as exploited in the wild in october 2010 by the belmoo malware.
+
+48. CVE-2010-3499
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3499
+f-secure anti-virus does not properly interact with the processing of hcp:// urls by the microsoft help and support center, which makes it easier for remote attackers to execute arbitrary code via malware that is correctly detected by this product, but with a detection approach that occurs too late to stop the code execution.  note: the researcher indicates that a vendor response was received, stating that "the inability to catch these files are caused by lacking functionality rather than programming errors."
+
+49. CVE-2010-1346
+Fecha: 2010
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1346
+sql injection vulnerability in admin/login.php in mini cms ribafs 1.0, when magic_quotes_gpc is disabled, allows remote attackers to execute arbitrary sql commands via the login parameter.  note: some of these details are obtained from third party information.
+

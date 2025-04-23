@@ -1,0 +1,348 @@
+1. CVE-2018-1170
+Fecha: 2018
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-1170
+This vulnerability allows adjacent attackers to inject arbitrary Controller Area Network messages on vulnerable installations of Volkswagen Customer-Link App 1.30 and HTC Customer-Link Bridge. Authentication is not required to exploit this vulnerability. The specific flaw exists within the Customer-Link App and Customer-Link Bridge. The issue results from the lack of a proper protection mechanism against unauthorized firmware updates. An attacker can leverage this vulnerability to inject CAN messages. Was ZDI-CAN-5264.
+
+2. CVE-2018-6486
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-6486
+XML External Entity (XXE) vulnerability in Micro Focus Fortify Audit Workbench (AWB) and Micro Focus Fortify Software Security Center (SSC), versions 16.10, 16.20, 17.10. This vulnerability could be exploited to allow a XML External Entity (XXE) injection.
+
+3. CVE-2017-13245
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2017-13245
+A elevation of privilege vulnerability in the Upstream kernel audio driver. Product: Android. Versions: Android kernel. ID: A-64315347.
+
+4. CVE-2017-17279
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2017-17279
+The soundtrigger module in Huawei Mate 9 Pro smart phones with software of the versions before LON-AL00B 8.0.0.343(C00) has an authentication bypass vulnerability due to the improper design of the module. An attacker tricks a user into installing a malicious application, and the application can exploit the vulnerability and make attacker bypass the authentication, the attacker can control the phone to sent short messages and make call within audio range to the phone.
+
+5. CVE-2018-3560
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-3560
+In Android for MSM, Firefox OS for MSM, QRD Android, with all Android releases from CAF using the Linux kernel, a Double Free vulnerability exists in Audio Driver while opening a sound compression device.
+
+6. CVE-2017-0748
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2017-0748
+An information disclosure vulnerability in the Qualcomm audio driver. Product: Android. Versions: Android Kernel. Android ID: A-35764875. References: QC-CR#2029798.
+
+7. CVE-2017-9657
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2017-9657
+Under specific 802.11 network conditions, a partial re-association of the Philips IntelliVue MX40 Version B.06.18 WLAN monitor to the central monitoring station is possible. In this state, the central monitoring station can indicate the MX40 is not connected or associated to the central monitor, and thus should be operating in local monitoring mode (local audio-on, screen-on), but the MX40 WLAN itself can instead still be operating in telemetry mode (local audio-off, screen-off). If a patient experiences an alarm event and clinical staff expects the MX40 to provide local alarming when it is not available from the local device, a delay of treatment can occur. CVSS v3 base score: 6.5, CVSS vector string: AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H. Philips has released software update, Version B.06.18, to fix the improper cleanup on thrown exception vulnerability, and implement mitigations to reduce the risk associated with the improper handling of exceptional conditions vulnerability. The software update implements messaging and alarming on the MX40 and at the central monitoring station, when the MX40 disconnects from the access point.
+
+8. CVE-2018-0280
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-0280
+A vulnerability in the Real-Time Transport Protocol (RTP) bitstream processing of the Cisco Meeting Server could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition. The vulnerability is due to insufficient input validation of incoming RTP bitstreams. An attacker could exploit this vulnerability by sending a crafted RTP bitstream to an affected Cisco Meeting Server. A successful exploit could allow the attacker to deny audio and video services by causing media process crashes resulting in a DoS condition on the affected product. This vulnerability affects Cisco Meeting Server deployments that are running Cisco Meeting Server Software Releases 2.0, 2.1, 2.2, and 2.3. Cisco Bug IDs: CSCve79693, CSCvf91393, CSCvg64656, CSCvh30725, CSCvi86363.
+
+9. CVE-2018-11518
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-11518
+A vulnerability allows a phreaking attack on HCL legacy IVR systems that do not use VoIP. These IVR systems rely on various frequencies of audio signals; based on the frequency, certain commands and functions are processed. Since these frequencies are accepted within a phone call, an attacker can record these frequencies and use them for service activations. This is a request-forgery issue when the required series of DTMF signals for a service activation is predictable (e.g., the IVR system does not speak a nonce to the caller). In this case, the IVR system accepts an activation request from a less-secure channel (any loudspeaker in the caller's physical environment) without verifying that the request was intended (it matches a nonce sent over a more-secure channel to the caller's earpiece).
+
+10. CVE-2016-9899
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2016-9899
+Use-after-free while manipulating DOM events and removing audio elements due to errors in the handling of node adoption. This vulnerability affects Firefox < 50.1, Firefox ESR < 45.6, and Thunderbird < 45.6.
+
+11. CVE-2017-7758
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2017-7758
+An out-of-bounds read vulnerability with the Opus encoder when the number of channels in an audio stream changes while the encoder is in use. This vulnerability affects Firefox < 54, Firefox ESR < 52.2, and Thunderbird < 52.2.
+
+12. CVE-2018-5146
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-5146
+An out of bounds memory write while processing Vorbis audio data was reported through the Pwn2Own contest. This vulnerability affects Firefox < 59.0.1, Firefox ESR < 52.7.2, and Thunderbird < 52.7.
+
+13. CVE-2018-0294
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-0294
+A vulnerability in the write-erase feature of Cisco FXOS Software and Cisco NX-OS Software could allow an authenticated, local attacker to configure an unauthorized administrator account for an affected device. The vulnerability exists because the affected software does not properly delete sensitive files when certain CLI commands are used to clear the device configuration and reload a device. An attacker could exploit this vulnerability by logging into an affected device as an administrative user and configuring an unauthorized account for the device. The account would not require a password for authentication and would be accessible only via a Secure Shell (SSH) connection to the device. A successful exploit could allow the attacker to configure an unauthorized account that has administrative privileges, does not require a password for authentication, and does not appear in the running configuration or the audit logs for the affected device. This vulnerability affects Firepower 4100 Series Next-Generation Firewalls, Firepower 9300 Security Appliance, Nexus 1000V Series Switches, Nexus 1100 Series Cloud Services Platforms, Nexus 2000 Series Fabric Extenders, Nexus 3500 Platform Switches, Nexus 4000 Series Switches, Nexus 5500 Platform Switches, Nexus 5600 Platform Switches, Nexus 6000 Series Switches, UCS 6100 Series Fabric Interconnects, UCS 6200 Series Fabric Interconnects, UCS 6300 Series Fabric Interconnects. Cisco Bug IDs: CSCvd13993, CSCvd34845, CSCvd34857, CSCvd34862, CSCvd34879, CSCve35753.
+
+14. CVE-2018-3071
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-3071
+Vulnerability in the MySQL Server component of Oracle MySQL (subcomponent: Audit Log). Supported versions that are affected are 5.7.22 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.0 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H).
+
+15. CVE-2018-3115
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-3115
+Vulnerability in the Oracle Retail Sales Audit component of Oracle Retail Applications (subcomponent: Operational Insights). Supported versions that are affected are 15.0 and 16.0. Difficult to exploit vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Retail Sales Audit. While the vulnerability is in Oracle Retail Sales Audit, attacks may significantly impact additional products. Successful attacks of this vulnerability can result in unauthorized access to critical data or complete access to all Oracle Retail Sales Audit accessible data as well as unauthorized update, insert or delete access to some of Oracle Retail Sales Audit accessible data and unauthorized ability to cause a partial denial of service (partial DOS) of Oracle Retail Sales Audit. CVSS 3.0 Base Score 7.7 (Confidentiality, Integrity and Availability impacts). CVSS Vector: (CVSS:3.0/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:L/A:L).
+
+16. CVE-2018-3144
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-3144
+Vulnerability in the MySQL Server component of Oracle MySQL (subcomponent: Server: Security: Audit). Supported versions that are affected are 5.7.23 and prior and 8.0.12 and prior. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.0 Base Score 5.9 (Availability impacts). CVSS Vector: (CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H).
+
+17. CVE-2018-19886
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-19886
+An invalid memory address dereference was discovered in the huffcode function (libfaac/huff2.c) in Freeware Advanced Audio Coder (FAAC) 1.29.9.2. The vulnerability causes a segmentation fault and application crash, which leads to denial of service in the book 8 case.
+
+18. CVE-2018-19887
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-19887
+An invalid memory address dereference was discovered in the huffcode function (libfaac/huff2.c) in Freeware Advanced Audio Coder (FAAC) 1.29.9.2. The vulnerability causes a segmentation fault and application crash, which leads to denial of service in the book 4 case.
+
+19. CVE-2018-19888
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-19888
+An invalid memory address dereference was discovered in the huffcode function (libfaac/huff2.c) in Freeware Advanced Audio Coder (FAAC) 1.29.9.2. The vulnerability causes a segmentation fault and application crash, which leads to denial of service in the HCB_ESC case.
+
+20. CVE-2018-19889
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-19889
+An invalid memory address dereference was discovered in the huffcode function (libfaac/huff2.c) in Freeware Advanced Audio Coder (FAAC) 1.29.9.2. The vulnerability causes a segmentation fault and application crash, which leads to denial of service in the book 6 case.
+
+21. CVE-2018-19890
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-19890
+An invalid memory address dereference was discovered in the huffcode function (libfaac/huff2.c) in Freeware Advanced Audio Coder (FAAC) 1.29.9.2. The vulnerability causes a segmentation fault and application crash, which leads to denial of service in the book 2 case.
+
+22. CVE-2018-19891
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-19891
+An invalid memory address dereference was discovered in the huffcode function (libfaac/huff2.c) in Freeware Advanced Audio Coder (FAAC) 1.29.9.2. The vulnerability causes a segmentation fault and application crash, which leads to denial of service in the book 10 case.
+
+23. CVE-2018-20195
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-20195
+A NULL pointer dereference was discovered in ic_predict of libfaad/ic_predict.c in Freeware Advanced Audio Decoder 2 (FAAD2) 2.8.8. The vulnerability causes a segmentation fault and application crash, which leads to denial of service.
+
+24. CVE-2018-20198
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-20198
+A NULL pointer dereference was discovered in ifilter_bank of libfaad/filtbank.c in Freeware Advanced Audio Decoder 2 (FAAD2) 2.8.8. The vulnerability causes a segmentation fault and application crash, which leads to denial of service because adding to windowed output is mishandled in the LONG_START_SEQUENCE case.
+
+25. CVE-2018-20199
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-20199
+A NULL pointer dereference was discovered in ifilter_bank of libfaad/filtbank.c in Freeware Advanced Audio Decoder 2 (FAAD2) 2.8.8. The vulnerability causes a segmentation fault and application crash, which leads to denial of service because adding to windowed output is mishandled in the ONLY_LONG_SEQUENCE case.
+
+26. CVE-2018-20357
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-20357
+A NULL pointer dereference was discovered in sbr_process_channel of libfaad/sbr_dec.c in Freeware Advanced Audio Decoder 2 (FAAD2) 2.8.8. The vulnerability causes a segmentation fault and application crash.
+
+27. CVE-2018-20358
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-20358
+An invalid memory address dereference was discovered in the lt_prediction function of libfaad/lt_predict.c in Freeware Advanced Audio Decoder 2 (FAAD2) 2.8.8. The vulnerability causes a segmentation fault and application crash, which leads to denial of service.
+
+28. CVE-2018-20359
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-20359
+An invalid memory address dereference was discovered in the sbrDecodeSingleFramePS function of libfaad/sbr_dec.c in Freeware Advanced Audio Decoder 2 (FAAD2) 2.8.8. The vulnerability causes a segmentation fault and application crash, which leads to denial of service.
+
+29. CVE-2018-20360
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-20360
+An invalid memory address dereference was discovered in the sbr_process_channel function of libfaad/sbr_dec.c in Freeware Advanced Audio Decoder 2 (FAAD2) 2.8.8. The vulnerability causes a segmentation fault and application crash, which leads to denial of service.
+
+30. CVE-2018-20361
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-20361
+An invalid memory address dereference was discovered in the hf_assembly function of libfaad/sbr_hfadj.c in Freeware Advanced Audio Decoder 2 (FAAD2) 2.8.8. The vulnerability causes a segmentation fault and application crash, which leads to denial of service.
+
+31. CVE-2018-20362
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-20362
+A NULL pointer dereference was discovered in ifilter_bank of libfaad/filtbank.c in Freeware Advanced Audio Decoder 2 (FAAD2) 2.8.8. The vulnerability causes a segmentation fault and application crash because adding to windowed output is mishandled in the EIGHT_SHORT_SEQUENCE case.
+
+32. CVE-2017-3765
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2017-3765
+In Enterprise Networking Operating System (ENOS) in Lenovo and IBM RackSwitch and BladeCenter products, an authentication bypass known as "HP Backdoor" was discovered during a Lenovo security audit in the serial console, Telnet, SSH, and Web interfaces. This bypass mechanism can be accessed when performing local authentication under specific circumstances. If exploited, admin-level access to the switch is granted.
+
+33. CVE-2017-13232
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2017-13232
+In audioserver, there is an out-of-bounds write due to a log statement using %s with an array that may not be NULL terminated. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation. Product: Android. Versions: 5.1.1, 6.0, 6.0.1, 7.0, 7.1.1, 7.1.2, 8.0, 8.1. Android ID: A-68953950.
+
+34. CVE-2018-9531
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-9531
+In AudioSpecificConfig_Parse of tpdec_asc.cpp, there is a possible out-of-bounds write due to a missing bounds check. This could lead to remote code execution with no additional execution privileges needed. User interaction is needed for exploitation. Product: Android. Versions: Android-9. Android ID: A-112661641
+
+35. CVE-2018-10070
+Fecha: 2018
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-10070
+A vulnerability in MikroTik Version 6.41.4 could allow an unauthenticated remote attacker to exhaust all available CPU and all available RAM by sending a crafted FTP request on port 21 that begins with many '\0' characters, preventing the affected router from accepting new FTP connections. The router will reboot after 10 minutes, logging a "router was rebooted without proper shutdown" message.
+
+36. CVE-2018-5095
+Fecha: 2018
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-5095
+An integer overflow vulnerability in the Skia library when allocating memory for edge builders on some systems with at least 8 GB of RAM. This results in the use of uninitialized memory, resulting in a potentially exploitable crash. This vulnerability affects Thunderbird < 52.6, Firefox ESR < 52.6, and Firefox < 58.
+
+37. CVE-2018-1999012
+Fecha: 2018
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-1999012
+FFmpeg before commit 9807d3976be0e92e4ece3b4b1701be894cd7c2e1 contains a CWE-835: Infinite loop vulnerability in pva format demuxer that can result in a Vulnerability that allows attackers to consume excessive amount of resources like CPU and RAM. This attack appear to be exploitable via specially crafted PVA file has to be provided as input. This vulnerability appears to have been fixed in 9807d3976be0e92e4ece3b4b1701be894cd7c2e1 and later.
+
+38. CVE-2018-14647
+Fecha: 2018
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-14647
+Python's elementtree C accelerator failed to initialise Expat's hash salt during initialization. This could make it easy to conduct denial of service attacks against Expat by constructing an XML document that would cause pathological hash collisions in Expat's internal data structures, consuming large amounts CPU and RAM. The vulnerability exists in Python versions 3.7.0, 3.6.0 through 3.6.6, 3.5.0 through 3.5.6, 3.4.0 through 3.4.9, 2.7.0 through 2.7.15.
+
+39. CVE-2018-20021
+Fecha: 2018
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-20021
+LibVNC before commit c3115350eb8bb635d0fdb4dbbb0d0541f38ed19c contains a CWE-835: Infinite loop vulnerability in VNC client code. Vulnerability allows attacker to consume excessive amount of resources like CPU and RAM
+
+40. CVE-2018-1000538
+Fecha: 2018
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1000538
+minio inc. minio s3 server version prior to release.2018-05-16t23-35-33z contains a allocation of memory without limits or throttling (similar to cwe-774) vulnerability in write-to-ram that can result in denial of service. this attack appear to be exploitable via sending v4-(pre)signed requests with large bodies . this vulnerability appears to have been fixed in after commit 9c8b7306f55f2c8c0a5c7cea9a8db9d34be8faa7.
+
+41. CVE-2018-9233
+Fecha: 2018
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-9233
+sophos endpoint protection 10.7 uses an unsalted sha-1 hash for password storage in %programdata%\sophos\sophos anti-virus\config\machine.xml, which makes it easier for attackers to determine a cleartext password, and subsequently choose unsafe malware settings, via rainbow tables or other approaches.
+
+42. CVE-2018-6319
+Fecha: 2018
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-6319
+in sophos tester tool 3.2.0.7 beta, the driver accepts a special deviceiocontrol code that doesn't check its argument. this argument is a memory address: if a caller passes a null pointer or a random invalid address, the driver will cause a blue screen of death. if a program or malware does this at boot time, it can cause a persistent denial of service on the machine.
+
+43. CVE-2018-18203
+Fecha: 2018
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-18203
+A vulnerability in the update mechanism of Subaru StarLink Harman head units 2017, 2018, and 2019 may give an attacker (with physical access to the vehicle's USB ports) the ability to rewrite the firmware of the head unit. This occurs because the device accepts modified QNX6 filesystem images (as long as the attacker obtains access to certain Harman decryption/encryption code) as a consequence of a bug where unsigned images pass a validity check. An attacker could potentially install persistent malicious head unit firmware and execute arbitrary code as the root user.
+
+44. CVE-2017-9634
+Fecha: 2018
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2017-9634
+Mitsubishi E-Designer, Version 7.52 Build 344 contains two code sections which may be exploited to allow an attacker to overwrite arbitrary memory locations. This can result in arbitrary code execution, compromised data integrity, denial of service, and system crash.
+
+45. CVE-2017-9636
+Fecha: 2018
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2017-9636
+Mitsubishi E-Designer, Version 7.52 Build 344 contains five code sections which may be exploited to overwrite the heap. This can result in arbitrary code execution, compromised data integrity, denial of service, and system crash.
+
+46. CVE-2017-9638
+Fecha: 2018
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2017-9638
+Mitsubishi E-Designer, Version 7.52 Build 344 contains six code sections which may be exploited to overwrite the stack. This can result in arbitrary code execution, compromised data integrity, denial of service, and system crash.
+
+47. CVE-2017-1000494
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2017-1000494
+Uninitialized stack variable vulnerability in NameValueParserEndElt (upnpreplyparse.c) in miniupnpd < 2.0 allows an attacker to cause Denial of Service (Segmentation fault and Memory Corruption) or possibly have unspecified other impact
+
+48. CVE-2018-5720
+Fecha: 2018
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-5720
+An issue was discovered on DODOCOOL DC38 3-in-1 N300 Mini Wireless Range Extend RTN2-AW.GD.R3465.1.20161103 devices. A Cross-site request forgery (CSRF) vulnerability allows remote attackers to hijack the authentication of users for requests that modify all the settings. This vulnerability can lead to changing an existing user's username and password, changing the Wi-Fi password, etc.
+
+49. CVE-2018-10717
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-10717
+The DecodeGifImg function in ngiflib.c in MiniUPnP ngiflib 0.4 does not consider the bounds of the pixels data structure, which allows remote attackers to cause a denial of service (WritePixels heap-based buffer overflow and application crash) or possibly have unspecified other impact via a crafted GIF file, a different vulnerability than CVE-2018-10677.
+
+50. CVE-2018-1000524
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-1000524
+miniSphere version 5.2.9 and earlier contains a Integer Overflow vulnerability in layer_resize() function in map_engine.c that can result in remote denial of service. This attack appear to be exploitable via the victim must load a specially-crafted map which calls SetLayerSize in its entry script. This vulnerability appears to have been fixed in 5.0.3, 5.1.5, 5.2.10 and later.
+
+51. CVE-2018-6906
+Fecha: 2018
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-6906
+A persistent Cross Site Scripting (XSS) vulnerability in the Green Electronics RainMachine Mini-8 (2nd Generation) and Touch HD 12 web application allows an attacker to inject arbitrary JavaScript via the REST API.
+
+52. CVE-2018-6907
+Fecha: 2018
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-6907
+A Cross Site Request Forgery (CSRF) vulnerability in the Green Electronics RainMachine Mini-8 (2nd Generation) and Touch HD 12 web application allows an attacker to control the RainMachine device via the REST API.
+
+53. CVE-2018-6908
+Fecha: 2018
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-6908
+An authentication bypass vulnerability exists in the Green Electronics RainMachine Mini-8 (2nd Generation) and Touch HD 12 web application allowing an unauthenticated attacker to perform authenticated actions on the device via a 127.0.0.1:port value in the HTTP 'Host' header, as demonstrated by retrieving credentials.
+
+54. CVE-2018-20592
+Fecha: 2018
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20592
+in mini-xml (aka mxml) v2.12, there is a use-after-free in the mxmladd function of the mxml-node.c file. remote attackers could leverage this vulnerability to cause a denial-of-service via a crafted xml file, as demonstrated by mxmldoc.
+
+55. CVE-2018-14790
+Fecha: 2018
+Fuente: MITRE
+URL: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-14790
+fuji electric frenic loader v3.3 v7.3.4.1a of frenic-mini (c1), frenic-mini (c2), frenic-eco, frenic-multi, frenic-mega, frenic-ace. a buffer over-read vulnerability may allow remote code execution on the device.
+
+56. CVE-2017-17663
+Fecha: 2018
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2017-17663
+The htpasswd implementation of mini_httpd before v1.28 and of thttpd before v2.28 is affected by a buffer overflow that can be exploited remotely to perform code execution.
+
+57. CVE-2018-10831
+Fecha: 2018
+Fuente: NVD
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-10831
+Z-NOMP before 2018-04-05 has an incorrect Equihash solution verifier that allows attackers to spoof mining shares, as demonstrated by providing a solution with {x1=1,x2=1,x3=1,...,x512=1} to bypass this verifier for any blockheader. This originally affected (for example) the Bitcoin Gold and Zcash cryptocurrencies, and continued to be exploited in the wild in May 2018 against smaller cryptocurrencies.
+
+58. CVE-2018-6011
+Fecha: 2018
+Fuente: NVD, MITRE
+URL: https://nvd.nist.gov/vuln/detail/CVE-2018-6011
+The time-based one-time-password (TOTP) function in the application logic of the Green Electronics RainMachine Mini-8 (2nd generation) uses the administrator's password hash to generate a 6-digit temporary passcode that can be used for remote and local access, aka a "Use of Password Hash Instead of Password for Authentication" issue. This is exploitable by an attacker who discovers a hash value in the rainmachine-settings.sqlite file.
+
