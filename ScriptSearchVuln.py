@@ -6,6 +6,7 @@ from collections import defaultdict
 from bs4 import BeautifulSoup
 
 from metodos import Metodos
+from HuggingFaceMultiModel import clasificacion_conjunta
 
 # Configuración inicial
 
@@ -13,6 +14,7 @@ NVD_API_URL = 'https://services.nvd.nist.gov/rest/json/cves/2.0'
 NVD_API_KEY = '3bc56854-b66b-4996-9047-9c2d3c21f215'
 
 keywords = Metodos.cargar_keywords_desde_txt("keywords.txt")
+cve_analizados = Metodos.cargar_cves_analizados()
 
 # Diccionarios agrupados por año
 vulns_dict = {}
@@ -37,7 +39,6 @@ def buscar_cves_nvd(query):
     }
 
     keywords_strict = ' AND '.join(kw.strip() for kw in query.split())
-    print(keywords_strict)
 
     while True:
         params = {
@@ -64,6 +65,19 @@ def buscar_cves_nvd(query):
                 fecha = datetime.fromisoformat(published_raw)
                 year = str(fecha.year)
 
+                descripcion = cve.get('descriptions', [{}])[0].get('value', '')
+
+                # Evita analizar si ya fue procesado
+                if cve_id in cve_analizados:
+                    continue
+
+                # Clasificación con IA antes de guardar
+                es_relacionado = clasificacion_conjunta(cve_id + ". " + descripcion)
+                cve_analizados.add(cve_id)
+
+                if es_relacionado == "NO RELACIONADO":
+                    continue
+
                 if cve_id in vulns_dict:
                     if "NVD" not in vulns_dict[cve_id]['Fuente']:
                         vulns_dict[cve_id]['Fuente'] += ", NVD"
@@ -74,7 +88,7 @@ def buscar_cves_nvd(query):
                         'Fuente': 'NVD',
                         'Título': cve_id,
                         'URL': f"https://nvd.nist.gov/vuln/detail/{cve_id}",
-                        'Descripción': cve.get('descriptions', [{}])[0].get('value', '')
+                        'Descripción': descripcion
                     }
 
             if len(resultados) < results_per_page:
@@ -105,22 +119,35 @@ def buscar_cves_mitre(query):
 
             if len(cols) == 2:
                 cve_id = cols[0].text.strip()
-                description = cols[1].text.strip().lower() # Descripcion en minusculas
+                descripcion = cols[1].text.strip().lower() # Descripcion en minusculas
                 query_words = query.lower().split() # Palabras de la busqueda en minusculas
                 year = extract_year(cve_id)
 
                 # Comprobamos que la descripcion contenga las palabras de la busqueda, sino descartamos resultado.
-                if all(word in description for word in query_words): 
+                if all(word in descripcion for word in query_words):
+
+                    # Evita analizar si ya fue procesado
+                    if cve_id in cve_analizados:
+                        continue
+
+                    # Clasificación con IA antes de guardar
+                    es_relacionado = clasificacion_conjunta(cve_id + ". " + descripcion)
+                    cve_analizados.add(cve_id)
+
+                    if es_relacionado == "NO RELACIONADO":
+                        continue
+
                     if cve_id in vulns_dict:
                         if "MITRE" not in vulns_dict[cve_id]['Fuente']:
                             vulns_dict[cve_id]['Fuente'] += ", MITRE"
+
                     else:
                         vulns_dict[cve_id] = {
                             'Fecha': year,
                             'Fuente': 'MITRE',
                             'Título': cve_id,
                             'URL': f"https://cve.mitre.org/cgi-bin/cvename.cgi?name={cve_id}",
-                            'Descripción': description
+                            'Descripción': descripcion
                         }
 
                     total_resultados += 1
@@ -143,7 +170,6 @@ for v in vulns_dict.values():
     vulns_by_year[v["Fecha"]].append(v)
 
 # Guardar y mostrar resumen
+Metodos.guardar_cves_analizados(cve_analizados)
 Metodos.save_resultados_by_year(vulns_by_year, "resultados/vulnerabilidades", "vulnerabilidades")
 Metodos.print_resume(vulns_by_year, "🔐 Vulnerabilidades")
-
-

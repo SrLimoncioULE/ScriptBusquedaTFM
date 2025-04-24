@@ -1,3 +1,4 @@
+import json
 import os
 import pandas as pd
 
@@ -15,6 +16,7 @@ class Metodos:
             print(f"❌ Error al leer {ruta_archivo}: {e}")
             return []
 
+
     @staticmethod
     def save_resultados_by_year(diccionario, carpeta, nombre):
         os.makedirs(carpeta, exist_ok=True)
@@ -30,6 +32,21 @@ class Metodos:
                     f.write(f"Fuente: {item['Fuente']}\n")
                     f.write(f"URL: {item['URL']}\n")
                     f.write(f"{item['Descripción']}\n\n")
+
+
+    @staticmethod
+    def cargar_cves_analizados(path="analizados.json"):
+        if not os.path.exists(path):
+            return set()
+        with open(path, "r", encoding="utf-8") as f:
+            return set(json.load(f))
+        
+
+    @staticmethod
+    def guardar_cves_analizados(cves_set, path="analizados.json"):
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(list(cves_set), f, indent=2)
+
 
     @staticmethod
     def print_resume(dataset, name):
