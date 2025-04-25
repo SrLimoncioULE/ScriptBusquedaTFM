@@ -2,7 +2,7 @@ import json
 import os
 from datetime import date
 
-from utils.RecoverySearch import RecoverySearch
+from utils.StateManager import StateManager
 from utils.VulnerabilitySearchEngine import VulnerabilitySearchEngine
 # from utils.NoticeSearcherEngine import NoticeSearcherEngine
 # from utils.DocumentSearcherEngine import DocumentSearcherEngine
@@ -18,67 +18,95 @@ def buscar_en_todo():
     print(f"🔎 Buscando '{keyword}' en noticias, documentos y vulnerabilidades...")
     # TODO: implementar lógica de búsqueda en las tres categorías
 
-def load_and_search_in_category(filename, category):
+
+def load_keywords_from_file(self, filename):
     if not os.path.exists(filename):
         print("❌ Archivo no encontrado.")
         return
 
     with open(filename, "r", encoding="utf-8") as f:
         keywords = [line.strip() for line in f if line.strip()]
+    
+    return keywords
 
-    if category == "notices":
-        # searcher = NoticiasSearcher()
-        for keyword in keywords:
-            print(f"🔎 Searching news for: {keyword}")
-            # results = searcher.search_news(keyword)
-            # Utils.save_results(results, "results/news", f"news_{keyword}")
-        return
+
+def load_and_search_in_category(keywords, category, searcher=None):
+
+    if not searcher:
+        if category == "notices":
+            print("⚠️ Módulo de noticias aún no implementado.")
+            return
+        
+        elif category == "documents":
+            print("⚠️ Módulo de documentos aún no implementado.")
+            return
+        
+        elif category == "vulnerabilities":
+            searcher = VulnerabilitySearchEngine()
+
+        else:
+            print("❌ Categoría no reconocida.")
+            return
     
-    elif category == "documents":
-        # searcher = DocumentosSearcher()
-        for keyword in keywords:
-            print(f"📄 Searching documents for: {keyword}")
-            # results = searcher.search_documents(keyword)
-            # Utils.save_results(results, "results/documents", f"docs_{keyword}")
-        return
-    
-    elif category == "vulnerabilities":
-        searcher = VulnerabilitySearchEngine()
-        for keyword in keywords:
-            print("antes de añadir")
-            print(searcher.vulnerabilities)
-            results = searcher.search_vulnerabilities(keyword)
-            if results == "SAVE_AND_EXIT":
-                print("logica save and exit")
-                break
-            print("despues de añadir")
-            print(searcher.vulnerabilities)
-        # Guardar resultados
-        #Utils.save_analyzed_cves(searcher.analyzed_cve_ids)
-        #Utils.save_results(searcher.vulnerabilities, "results/vulnerabilities", "vulnerabilities")
-        #Utils.print_summary(searcher.vulnerabilities, "🔐 Vulnerabilities Found")
-        return
-    else:
-        print("❌ Categoría no reconocida.")
+    keyword_counter = 0
+    remaining_keywords = keywords.copy()
+
+    while remaining_keywords:
+        current_keyword = remaining_keywords.pop(0)
+        print(f"\n🔎 Buscando '{current_keyword}' en {category}...")
+        result = searcher.search(current_keyword)  # Adaptar a categoría si fuera otra
+
+        if result == "SAVE_AND_EXIT":
+            remaining_keywords.insert(0, current_keyword)
+            StateManager.save_state(
+                category=category,
+                remaining_keywords=remaining_keywords,
+                analiced_ids=searcher.analiced_cve_ids,
+                results=searcher.vulnerabilities
+            )
+            print("⏸️ Búsqueda pausada. Estado guardado.")
+            return
+
+        keyword_counter += 1
+
+        if keyword_counter % 5 == 0:
+            print(f"💾 Guardando progreso tras {keyword_counter} keywords...")
+            StateManager.save_state(
+                category=category,
+                remaining_keywords=remaining_keywords,
+                analiced_ids=searcher.analiced_cve_ids,
+                results=searcher.vulnerabilities
+            )
+
+    # Guardado final (por si no era múltiplo de 5)
+    StateManager.save_state(
+        category=category,
+        remaining_keywords=[],
+        analiced_ids=searcher.analiced_cve_ids,
+        results=searcher.vulnerabilities
+    )
+    print("✅ Búsqueda completada. Estado final guardado.")
+
+
+
+def resume_from_recovery(category):
+    state = StateManager.load_state(category)
+    if not state:
+        print("❌ No hay estado para retomar.")
         return
 
-def resume_from_recovery(self, category):
-    
-    if category == "notices":
-        return
-    
-    elif category == "documents":
-        return
-    
-    elif category == "vulnerabilities":
-        recovery = RecoverySearch()
-        recovery.load(RECOVERY_PATH_CVE)
-        print(recovery)
-        #load_and_search_in_category(recovery.remaining_keywords, category)
-        return
+    print(f"🔁 Retomando búsqueda en categoría: '{category}'...")
+
+    remaining_keywords = state.get("remaining_keywords", [])
+    analiced_ids = set(state.get("analiced_ids", []))
+    results = state.get("results", {})
+
+    if category == "vulnerabilities":
+        searcher = VulnerabilitySearchEngine(analiced_cve_ids=analiced_ids, vulnerabilities=results)
+        load_and_search_in_category(remaining_keywords, category, searcher)
     else:
-        print("❌ Categoría no reconocida.")
-        return
+        print("⚠️ Solo implementado retomar vulnerabilidades por ahora.")
+
 
 def generar_documentacion_apa():
     print("📄 Generando documentación en formato APA...")
@@ -118,28 +146,44 @@ def main():
         if option == "1":
             # buscar_en_todo()
             print("De momento solo busca vulnerabilidades")
+
         elif option == "2":
             file = input("Nombre del archivo de keywords: ")
-            load_and_search_in_category(file, "notices")
+            keywords = load_keywords_from_file(file)
+            if keywords:
+                load_and_search_in_category(keywords, "notices")
+
         elif option == "3":
             file = input("Nombre del archivo de keywords: ")
-            load_and_search_in_category(file, "documents")
+            keywords = load_keywords_from_file(file)
+            if keywords:
+                load_and_search_in_category(keywords, "documents")
+
         elif option == "4":
             file = input("Nombre del archivo de keywords: ")
-            load_and_search_in_category(file, "vulnerabilities")
+            keywords = load_keywords_from_file(file)
+            if keywords:
+                load_and_search_in_category(keywords, None, "vulnerabilities")
+
         elif option == "5":
-            retomar_busqueda("noticias")
+            resume_from_recovery("notices")
+
         elif option == "6":
-            retomar_busqueda("documentos")
+            resume_from_recovery("documents")
+
         elif option == "7":
-            retomar_busqueda("vulnerabilidades")
+            resume_from_recovery("vulnerabilities")
+
         elif option == "8":
             generar_documentacion_apa()
+
         elif option == "0":
             print("👋 Saliendo...")
             break
+
         else:
             print("❗ Opción no válida. Intenta de nuevo.")
+
 
 if __name__ == "__main__":
     main()

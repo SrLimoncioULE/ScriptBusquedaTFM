@@ -76,8 +76,8 @@ class MultiModelTagger:
                 return "SAVE_AND_EXIT"
 
             model_results[model_key] = {"label": label, "score": score}
-            if label != "not related to automotive" and score > 0.4:
-                votos_positivos += 1
+            if label != "not related to automotive" and score > 0.35:
+                positive_votes += 1
 
         # Mayoría simple
         final_result = "RELATED" if positive_votes >= (len(MODELS) / 2) else "NOT_RELATED"

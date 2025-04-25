@@ -1,0 +1,83 @@
+{
+    "remaining_keywords": [
+        "CAN bus vulnerabilities",
+        "vehicle to infrastructure security",
+        "EV charging station hacking",
+        "OBD-II hacking",
+        "TPMS vulnerability",
+        "EV charger",
+        "electric vehicle charger",
+        "charging station",
+        "DSRC",
+        "C-V2X",
+        "vehicle to infrastructure"
+    ],
+    "analiced_ids": [
+        "CVE-2025-3426",
+        "CVE-2025-3019",
+        "CVE-2023-37470",
+        "CVE-2025-27512",
+        "CVE-2023-3028",
+        "CVE-2010-0685",
+        "CVE-2017-13108",
+        "CVE-2017-6669"
+    ],
+    "results": {
+        "CVE-2017-13108": {
+            "Date": "2017",
+            "Source": "MITRE",
+            "Title": "CVE-2017-13108",
+            "URL": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-13108",
+            "Description": "dfndr security antivirus, anti-hacking & cleaner, 5.0.9, 2017-11-01, android application uses a hard-coded key for encryption. data stored using this key can be decrypted by anyone able to access this key."
+        },
+        "CVE-2010-0685": {
+            "Date": "2010",
+            "Source": "NVD",
+            "Title": "CVE-2010-0685",
+            "URL": "https://nvd.nist.gov/vuln/detail/CVE-2010-0685",
+            "Description": "The design of the dialplan functionality in Asterisk Open Source 1.2.x, 1.4.x, and 1.6.x; and Asterisk Business Edition B.x.x and C.x.x, when using the ${EXTEN} channel variable and wildcard pattern matches, allows context-dependent attackers to inject strings into the dialplan using metacharacters that are injected when the variable is expanded, as demonstrated using the Dial application to process a crafted SIP INVITE message that adds an unintended outgoing channel leg.  NOTE: it could be argued that this is not a vulnerability in Asterisk, but a class of vulnerabilities that can occur in any program that uses this feature without the associated filtering functionality that is already available."
+        },
+        "CVE-2017-6669": {
+            "Date": "2017",
+            "Source": "NVD",
+            "Title": "CVE-2017-6669",
+            "URL": "https://nvd.nist.gov/vuln/detail/CVE-2017-6669",
+            "Description": "Multiple buffer overflow vulnerabilities exist in the Cisco WebEx Network Recording Player for Advanced Recording Format (ARF) files. An attacker could exploit these vulnerabilities by providing a user with a malicious ARF file via email or URL and convincing the user to launch the file. Exploitation of these vulnerabilities could cause an affected player to crash and, in some cases, could allow arbitrary code execution on the system of a targeted user. The Cisco WebEx Network Recording Player is an application that is used to play back WebEx meeting recordings that have been recorded on the computer of an online meeting attendee. The player can be automatically installed when the user accesses a recording file that is hosted on a WebEx server. The following client builds are affected by this vulnerability: Cisco WebEx Business Suite (WBS29) client builds prior to T29.13.130, Cisco WebEx Business Suite (WBS30) client builds prior to T30.17, Cisco WebEx Business Suite (WBS31) client builds prior to T31.10. Cisco Bug IDs: CSCvc47758 CSCvc51227 CSCvc51242."
+        },
+        "CVE-2023-3028": {
+            "Date": "2023",
+            "Source": "NVD",
+            "Title": "CVE-2023-3028",
+            "URL": "https://nvd.nist.gov/vuln/detail/CVE-2023-3028",
+            "Description": "Insufficient authentication in the MQTT backend (broker) allows an attacker to access and even manipulate the telemetry data of the entire fleet of vehicles using the HopeChart HQT-401 telematics unit. Other models are possibly affected too.\n\n\n\n\n\n\n\n\nMultiple vulnerabilities were identified:\n\n\n\n- The MQTT backend does not require authentication, allowing unauthorized connections from an attacker.\n\n\n\n- The vehicles publish their telemetry data (e.g. GPS Location, speed, odometer, fuel, etc) as messages in public topics. The backend also sends commands to the vehicles as MQTT posts in public topics. As a result, an attacker can access the confidential data of the entire fleet that is managed by the backend.\n\n\n\n- The MQTT messages sent by the vehicles or the backend are not encrypted or authenticated. An attacker can create and post messages to impersonate a vehicle or the backend. The attacker could then, for example, send incorrect information to the backend about the vehicle's location.\n\n\n\n- The backend can inject data into a vehicle\u00b4s CAN bus by sending a specific MQTT message on a public topic. Because these messages are not authenticated or encrypted, an attacker could impersonate the backend, create a fake message and inject CAN data in any vehicle managed by the backend.\n\n\nThe confirmed version is\u00a0201808021036, however further versions have been also identified as potentially impacted.\n\n\n\n"
+        },
+        "CVE-2023-37470": {
+            "Date": "2023",
+            "Source": "NVD",
+            "Title": "CVE-2023-37470",
+            "URL": "https://nvd.nist.gov/vuln/detail/CVE-2023-37470",
+            "Description": "Metabase is an open-source business intelligence and analytics platform. Prior to versions 0.43.7.3, 0.44.7.3, 0.45.4.3, 0.46.6.4, 1.43.7.3, 1.44.7.3, 1.45.4.3, and 1.46.6.4, a vulnerability could potentially allow remote code execution on one's Metabase server. The core issue is that one of the supported data warehouses (an embedded in-memory database H2), exposes a number of ways for a connection string to include code that is then executed by the process running the embedded database. Because Metabase allows users to connect to databases, this means that a user supplied string can be used to inject executable code. Metabase allows users to validate their connection string before adding a database (including on setup), and this validation API was the primary vector used as it can be called without validation. Versions 0.43.7.3, 0.44.7.3, 0.45.4.3, 0.46.6.4, 1.43.7.3, 1.44.7.3, 1.45.4.3, and 1.46.6.4 fix this issue by removing the ability of users to add H2 databases entirely. As a workaround, it is possible to block these vulnerabilities at the network level by blocking the endpoints `POST /api/database`, `PUT /api/database/:id`, and `POST /api/setup/validateuntil`. Those who use H2 as a file-based database should migrate to SQLite."
+        },
+        "CVE-2025-3019": {
+            "Date": "2025",
+            "Source": "NVD",
+            "Title": "CVE-2025-3019",
+            "URL": "https://nvd.nist.gov/vuln/detail/CVE-2025-3019",
+            "Description": "KNIME Business Hub is affected by several cross-site scripting vulnerabilities in its web pages. If a user clicks on a malicious link or opens a malicious web page, arbitrary Java Script may be executed with this user's permissions. This can lead to information loss and/or modification of existing data.\nThe issues are caused by a  bug https://github.com/Baroshem/nuxt-security/issues/610  in the widely used nuxt-security module.\n\n\n\n\n\nThere are no viable workarounds therefore we strongly recommend to update to one of the following versions of KNIME Business Hub:\n\n\n\n\n\n  *  1.13.3 or later\n\n\n\n\n\n\n  *  1.12.4 or later"
+        },
+        "CVE-2025-3426": {
+            "Date": "2025",
+            "Source": "NVD",
+            "Title": "CVE-2025-3426",
+            "URL": "https://nvd.nist.gov/vuln/detail/CVE-2025-3426",
+            "Description": "We observed that Intellispace Portal binaries doesn\u2019t have any protection mechanisms to prevent reverse engineering. Specifically, the app\u2019s code is not obfuscated, and no measures are in place to protect against decompilation, disassembly, or debugging. As a result, attackers can reverse-engineer the application to gain insights into its internal workings, which can potentially lead to the discovery of sensitive information, business logic flaws, and other vulnerabilities.\nUtilizing this flaw, the attacker was able to identify the Hardcoded credentials from PortalUsersDatabase.dll, which contains .NET remoting definition. Inside the namespace PortalUsersDatabase, the class Users contains the functions CreateAdmin and CreateService that are used to initialize accounts in the Portal service. Both CreateAdmin and CreateService functions contain a hardcoded encrypted password along with its respective salt that are set with the function SetInitialPasswordAndSalt.\nThis issue affects IntelliSpace Portal: 12 and prior; Advanced Visualization Workspace: 15."
+        },
+        "CVE-2025-27512": {
+            "Date": "2025",
+            "Source": "MITRE",
+            "Title": "CVE-2025-27512",
+            "URL": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-27512",
+            "Description": "zincati is an auto-update agent for fedora coreos hosts. zincati ships a polkit rule which allows the `zincati` system user to use the actions `org.projectatomic.rpmostree1.deploy` to deploy updates to the system and `org.projectatomic.rpmostree1.finalize-deployment` to reboot the system into the deployed update. since zincati v0.0.24, this polkit rule contains a logic error which broadens access of those polkit actions to any unprivileged user rather than just the `zincati` system user. in practice, this means that any unprivileged user with access to the system d-bus socket is able to deploy older fedora coreos versions (which may have other known vulnerabilities). note that rpm-ostree enforces that the selected version must be from the same branch the system is currently on so this cannot directly be used to deploy an attacker-controlled update payload. this primarily impacts users running untrusted workloads with access to the system d-bus socket. note that in general, untrusted workloads should not be given this access, whether containerized or not. by default, containers do not have access to the system d-bus socket. the logic error is fixed in zincati v0.0.30. a workaround is to manually add a following polkit rule, instructions for which are available in the github security advisory."
+        }
+    }
+}
