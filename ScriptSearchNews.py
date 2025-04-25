@@ -5,7 +5,7 @@ import re
 from collections import defaultdict
 from bs4 import BeautifulSoup
 
-from metodos import Metodos
+from utils.metodos import Metodos
 
 
 # Configuración inicial
