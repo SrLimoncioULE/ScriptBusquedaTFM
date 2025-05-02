@@ -1,7 +1,7 @@
 import requests
 import time
 
-HUGGINGFACE_TOKEN = "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"
+HUGGINGFACE_TOKEN = "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"
 
 MODELS = {
     "bart": "facebook/bart-large-mnli",
