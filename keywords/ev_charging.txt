@@ -1,0 +1,13 @@
+CCS
+CHAdeMO
+Charge Point Operator
+CPO
+CSMS
+eMSP
+ISO 15118-20
+NACS
+OCPP 1.6
+OCPP 2.0
+OCPP 2.0.1
+Plug & Charge
+SAE J1772

@@ -1,0 +1,118 @@
+ABB
+Adient
+AGC Automotive
+Aion
+Akebono
+Analog Devices Automotive
+Aston Martin
+Autoliv
+BAIC
+Bentley
+Blue Bird
+BorgWarner
+Brose
+Changan
+CIE Automotive
+Clarios
+DAF
+Daimler Truck
+Daimler Trucks
+Dana
+Dongfeng
+Envision AESC
+FANUC
+FAW
+FinDreams Battery
+Forvia Hella
+Freightliner
+GAC
+General Motors
+GKN
+GM
+Great Wall
+Guangzhou Automobile
+GWM
+Haval
+Hella
+HELLA
+Hino
+Hitachi Astemo
+Hongqi
+Hozon
+International
+Irizar
+Isuzu
+Iveco
+Jaguar Land Rover
+JLR
+JTEKT
+Kenworth
+King Long
+Knorr-Bremse
+Koito
+KUKA
+Lada
+Lancia
+Leapmotor
+LG Energy Solution
+Li Auto
+Lixiang
+Lotus
+Maserati
+Maybach
+Microchip Automotive
+Motherson
+Navistar
+Nemak
+Neta
+Northvolt
+NSG Pilkington
+NSK
+NTN
+Omron
+ON Semiconductor
+onsemi
+Peterbilt
+Plastic Omnium
+PSA
+Renault Group
+Rockwell Automation
+Roewe
+Rolls-Royce
+SAIC Motor
+SAIC-GM-Wuling
+Saint-Gobain Sekurit
+Samsung SDI
+Samvardhana Motherson
+Schaeffler
+SEAT
+Seat
+Siemens
+SK Innovation
+SK On
+SKF
+Skoda
+Solaris
+Stanley Electric
+Stellantis
+Sumitomo Electric
+Tenneco
+Texas Instruments Automotive
+TI Fluid Systems
+Toyoda Gosei
+VAG
+VAZ
+Volkswagen Group
+Volvo Trucks
+VW
+Webasto
+Western Star
+Wuling
+XPeng
+Xpeng
+Yanfeng
+Yaskawa Motoman
+Yutong
+Zeekr
+ZF Friedrichshafen
+Škoda
