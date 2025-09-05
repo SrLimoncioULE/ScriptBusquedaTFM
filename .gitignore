@@ -1,2 +1,12 @@
-.venv
-/.env
+# .gitignore
+
+# Ignorar venv local
+env310/
+
+.env
+
+.venv/
+venv/
+env/
+**/__pycache__/
+*.pyc

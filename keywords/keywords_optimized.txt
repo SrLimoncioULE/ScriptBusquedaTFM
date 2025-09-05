@@ -1,0 +1,385 @@
+8Base
+ABB
+Acura
+adaptive cruise control
+ADAS security
+Adient
+Advanced Driver Assistance Systems
+AGC Automotive
+Agenda
+Aion
+Akebono
+Akira
+Alfa Romeo
+ALPHV
+Analog Devices Automotive
+assembly line down
+assembly plant
+Aston Martin
+Audi
+Autoliv
+automotive hacking
+automotive OEM backdoor
+automotive supplier breach
+autonomous driving system attack
+autonomous vehicle exploit
+AutoSoft
+Avaddon
+Babuk
+backend outage
+BAIC
+Bentley
+BianLian
+Black Basta
+BlackByte
+BlackCat
+Blue Bird
+Bluetooth car vulnerability
+BMW
+body shop
+BorgWarner
+Brose
+Bugatti
+Buick
+BYD
+C-V2X
+C-V2X signal spoofing
+Cactus
+CAN bus vulnerabilities
+CAN FD
+CAN flooding attack
+CAN injection
+CAN-FD
+car diagnostic protocol hacking
+car diagnostic protocol
+car hacking
+CCS
+CDK Global
+CHAdeMO
+Changan
+Charge Point Operator
+charge station remote takeover
+charging point tampering
+charging station
+Chery
+Chevrolet
+Chrysler
+ciberataque confirmado
+CIE Automotive
+cierre de planta
+Citroen
+CL0P
+Clarios
+Clop
+connected car security
+connected car vulnerabilities
+connected vehicle vulnerabilities
+Conti
+Controller Area Network
+Cox Automotive
+CPO
+CSMS
+Cuba
+customer portal outage
+cyber attack on cars
+Dacia
+DAF
+Daihatsu
+Daimler Truck
+Daimler Trucks
+Daixin
+Dana
+DarkSide
+data dump
+dealer management system outage
+dealer software outage
+dealership outage
+Dealertrack
+DMS outage
+Dodge
+Dominion DMS
+Dongfeng
+DoppelPaymer
+DoS CAN bus
+double extortion
+DSRC
+DSRC jamming
+Dunghill
+ECU hacking
+ECU security
+ECU vulnerability
+Egregor
+electric vehicle charger
+Electric Vehicle Supply Equipment
+electronic control unit
+eMSP
+Envision AESC
+eSIM hijacking in automotive
+EV charger
+EV charger firmware hack
+EV charging station hacking
+Everest
+EVSE security
+exfiltración de datos
+F&I system down
+factory car firmware manipulation
+FANUC
+FAW
+Ferrari
+Fiat
+filtración confirma
+filtración de datos
+final assembly
+FinDreams Battery
+firmware reverse engineering car
+FlexRay exploit
+Ford
+Forvia Hella
+Freightliner
+GAC
+GB of data
+Geely
+General Motors
+GKN
+GM
+GMC
+Great Wall
+GSM GPS spoofing car
+Guangzhou Automobile
+GWM
+halted production
+Haval
+head unit
+HELLA
+Hella
+Hino
+Hitachi Astemo
+Honda
+Hongqi
+Hozon
+Hyundai
+in-vehicle infotainment
+in-vehicle network hacking
+Infiniti
+infotainment system vulnerability
+intelligent transportation system hack
+International
+Irizar
+ISO 15118 exploit
+ISO 15118-20
+ISO-TP vulnerability
+Isuzu
+IT outage
+ITS hack
+Iveco
+IVI
+J1939
+J1939 attack
+Jaguar
+Jeep
+JLR
+JTEKT
+Karakurt
+Kenworth
+keyless entry system vulnerability
+Keyloop
+Kia
+King Long
+Knorr-Bremse
+Koenigsegg
+Koito
+KUKA
+Lada
+Lada
+Lamborghini
+Lancia
+Land Rover
+lane keeping assist exploit
+leak site
+Leapmotor
+Lexus
+LG Energy Solution
+Li Auto
+LIN bus vulnerability
+line stop
+line stoppage
+Lixiang
+LockBit
+LockBit 2.0
+LockBit 3.0
+LockBit Black
+logistics halted
+Lorenz
+Lotus
+Lucid
+línea de producción detenida
+Mahindra
+MAN
+manufacturing outage
+Maserati
+Maybach
+Mazda
+Maze
+McLaren
+Medusa
+Mercedes-Benz
+Microchip Automotive
+Mini
+Mitsubishi
+Motherson
+Mount Locker
+NACS
+Navistar
+Nemak
+Neta
+network outage
+NIO
+Nissan
+NoEscape
+Nokoyawa
+Northvolt
+NSG Pilkington
+NSK
+NTN
+OBD-II hacking
+OCPP 1.6
+OCPP 2.0
+OCPP 2.0.1
+OCPP vulnerability
+Omron
+ON Semiconductor
+onboard LTE module hack
+onsemi
+Opel
+operaciones detenidas
+operaciones interrumpidas
+operational disruption
+OT outage
+OTA vulnerability
+over-the-air firmware vulnerability
+owner app outage
+Pagani
+paint shop
+parts ordering down
+Peterbilt
+Peugeot
+Pinewood DMS
+Plastic Omnium
+Play
+Plug & Charge
+Polestar
+Porsche
+posted data
+power delivery spoofing
+production line down
+production line malware in ECUs
+PSA
+Qilin
+Ragnar Locker
+RAM
+RansomedVC
+RansomHouse
+remote unlock attack
+Renault
+Renault Group
+Reynolds and Reynolds
+Rhysida
+Rivian
+roadside unit vulnerability
+Rockwell Automation
+Roewe
+Rolls-Royce
+Rook
+Royal
+RSU vulnerability
+SAE J1772
+SAIC Motor
+SAIC-GM-Wuling
+Saint-Gobain Sekurit
+sales system down
+Samsung SDI
+Samvardhana Motherson
+Scania
+Schaeffler
+SEAT
+Seat
+sensor spoofing camera
+sensor spoofing LIDAR
+sensor spoofing radar
+Serti DMS
+service desk down
+shame site
+shipping delayed
+shutdown
+Siemens
+SIM card in car attack
+SK Innovation
+SK On
+SKF
+Skoda
+smart charging vulnerability
+smart key spoofing
+Snatch
+Sodinokibi
+Solaris
+stamping plant
+Stanley Electric
+Stellantis
+stole gigabytes
+stole terabytes
+Stormous
+Subaru
+Sumitomo Electric
+supply chain automotive exploit
+Suzuki
+T-Box
+Tata
+TB of data
+TCU
+Tekion
+Telematics Control Unit
+telematics platform outage
+telemetry data leakage vehicle
+temporarily halted production
+Tenneco
+Tesla
+Texas Instruments Automotive
+third-party ECU vulnerability
+TI Fluid Systems
+Toyoda
+TPMS vulnerability
+UDS injection
+Unified Diagnostic Services
+V2G communication exploit
+V2P spoofing
+V2V attack
+VAG
+VANET exploit
+VAZ
+vehicle hacking
+vehicle telematics attack
+Vehicle to Grid
+vehicle to infrastructure
+vehicle to infrastructure security
+vehicle-to-pedestrian spoofing
+vehicle-to-vehicle attack
+vehicular ad-hoc networks exploit
+Vice Society
+VinFast
+Volkswagen
+Volvo
+VW
+Webasto
+Western Star
+Wi-Fi car hack
+wireless carjacking
+Wuling
+XPeng
+Xpeng
+Yanfeng
+Yaskawa Motoman
+Yutong
+Zeekr
+Zeon
+ZF Friedrichshafen
+Škoda

@@ -1,0 +1,213 @@
+{
+  "languages": ["es", "en"],
+  "categories": {
+    "attack_terms": {
+      "es": [
+        "ataque", "ciberataque", "intrusión", "hackeo", "pirateo", "compromiso",
+        "brecha", "filtración", "fuga de datos", "exfiltración", "malware",
+        "ransomware", "troyano", "spyware", "phishing", "spear phishing",
+        "botnet", "DDoS", "DoS", "denegación de servicio", "secuestro",
+        "explotación", "exploit", "0[- ]?day", "día cero", "vulneración",
+        "extorsión", "robo de datos", "datos filtrados", "datos publicados"
+      ],
+      "en": [
+        "attack", "cyberattack", "intrusion", "breach", "hack", "hacked", "hijack",
+        "compromise", "data leak", "data breach", "exfiltration", "malware",
+        "ransomware", "trojan", "spyware", "phishing", "spear[- ]phishing",
+        "botnet", "DDoS", "DoS", "denial of service", "exploit", "0[- ]?day", "zero[- ]day",
+        "extortion", "data stolen", "data posted", "leak site"
+      ]
+    },
+    "vuln_terms": {
+      "es": [
+        "vulnerabilidad", "vulnerabilidades", "CVE-\\d{4}-\\d+",
+        "CWE-\\d+", "explotación", "desbordamiento", "inyección",
+        "ejecución remota de código", "RCE", "SSRF", "XXE", "path traversal",
+        "escalada de privilegios", "bypass", "sobrescritura", "overflow",
+        "corrupción de memoria", "inyección de comandos", "inyección SQL",
+        "lectura arbitraria", "escritura arbitraria", "parche", "actualización de seguridad",
+        "boletín de seguridad", "advisory"
+      ],
+      "en": [
+        "vulnerability", "vulnerabilities", "CVE-\\d{4}-\\d+",
+        "CWE-\\d+", "exploit", "buffer overflow", "injection",
+        "remote code execution", "\\bRCE\\b", "\\bSSRF\\b", "\\bXXE\\b",
+        "path traversal", "privilege escalation", "bypass", "overwrite",
+        "memory corruption", "command injection", "SQL injection",
+        "arbitrary read", "arbitrary write", "patch", "security update",
+        "security advisory", "bulletin"
+      ]
+    },
+    "automotive_terms": {
+      "es": [
+        "vehículo", "coche", "automóvil", "camión", "autobús", "furgoneta",
+        "EV", "BEV", "PHEV", "HEV",
+        "ECU", "TCU", "BMS", "T[- ]?Box", "unidad de control", "pasarela", "gateway",
+        "CAN(?:\\s*FD)?", "bus CAN", "LIN", "FlexRay", "OBD(?:-?II)?",
+        "UDS", "SOME/IP", "DoIP", "Automotive Ethernet", "V2X", "C[- ]?V2X", "DSRC",
+        "telemática", "infotainment", "IVI", "head unit", "OTA", "firmware", "bootloader", "ADAS"
+      ],
+      "en": [
+        "vehicle", "car", "automobile", "truck", "bus", "van",
+        "EV", "BEV", "PHEV", "HEV",
+        "ECU", "TCU", "BMS", "T[- ]?Box", "gateway",
+        "CAN(?:\\s*FD)?", "CAN bus", "LIN", "FlexRay", "OBD(?:-?II)?",
+        "UDS", "SOME/IP", "DoIP", "Automotive Ethernet", "V2X", "C[- ]?V2X", "DSRC",
+        "telematics", "infotainment", "IVI", "head unit", "OTA", "firmware", "bootloader", "ADAS"
+      ]
+    },
+    "manufacturing_terms": {
+      "es": [
+        "fábrica", "planta", "línea de montaje", "producción", "proveedor",
+        "cadena de suministro", "logística", "centro logístico",
+        "OT", "ICS", "SCADA", "PLC", "HMI", "MES", "DCS",
+        "robot", "cobot", "AGV", "almacén automatizado",
+        "ensamblaje", "montaje", "concesionario", "concesionarios"
+      ],
+      "en": [
+        "factory", "plant", "assembly line", "production", "supplier",
+        "supply chain", "logistics", "logistics center",
+        "OT", "ICS", "SCADA", "PLC", "HMI", "MES", "DCS",
+        "robot", "cobot", "AGV", "automated warehouse",
+        "assembly", "dealership", "dealer"
+      ]
+    },
+    "attack_vectors": {
+      "es": [
+        "llave inteligente", "key fob", "RKE", "TPMS", "Bluetooth", "BLE", "Wi[- ]?Fi",
+        "cellular", "LTE", "5G", "GSM", "GPS", "GNSS", "telemática", "V2X",
+        "puerto OBD", "OBD[- ]?II", "dongle", "aplicación móvil", "app móvil",
+        "unidad principal", "head unit", "IVI", "telematics control unit",
+        "actualización OTA", "fuga por USB", "firmware", "bootloader",
+        "keyless", "NFC", "UWB"
+      ],
+      "en": [
+        "key fob", "RKE", "TPMS", "Bluetooth", "BLE", "Wi[- ]?Fi",
+        "cellular", "LTE", "5G", "GSM", "GPS", "GNSS", "telematics", "V2X",
+        "OBD[- ]?II", "OBD port", "dongle", "mobile app", "head unit", "IVI",
+        "telematics control unit", "OTA update", "USB", "firmware", "bootloader",
+        "keyless", "NFC", "UWB"
+      ]
+    },
+    "protocols": [
+      "CAN(?:\\s*FD)?", "J1939", "J1979", "LIN", "FlexRay", "MOST",
+      "UDS", "DoIP", "SOME/IP", "Automotive Ethernet", "TSN", "802\\.1AS"
+    ],
+    "standards": [
+      "UN R155", "UN R156", "ISO/SAE 21434", "ISO 26262", "IEC 62443"
+    ],
+    "outcomes": {
+      "es": [
+        "paralización", "paro de producción", "cierre de planta",
+        "interrupción", "caída de producción", "exigencia de rescate",
+        "robo de datos", "sustracción de IP", "filtración de datos",
+        "servicios no disponibles", "caída de servicios", "apagón de servicios",
+        "envíos detenidos", "disrupción logística", "logística interrumpida",
+        "línea de montaje detenida", "parada de líneas"
+      ],
+      "en": [
+        "production halt", "plant shutdown", "disruption", "downtime",
+        "extortion", "ransom", "data theft", "IP theft", "data leak",
+        "services unavailable", "service outage", "outage",
+        "shipping halted", "logistics disruption", "logistics interrupted",
+        "assembly line halted", "line stoppage"
+      ]
+    }
+  },
+  "brand_aliases": {
+    "toyota": ["toyota motor", "lexus", "daihatsu"],
+    "volkswagen": ["vw", "audi", "porsche", "skoda", "škoda", "seat", "cupra", "lamborghini", "bentley", "bugatti"],
+    "bmw": ["mini", "rolls-royce"],
+    "mercedes-benz": ["mercedes", "daimler", "mb"],
+    "stellantis": ["fiat", "chrysler", "jeep", "dodge", "ram", "peugeot", "citroën", "citroen", "ds automobiles", "opel", "vauxhall", "alfa romeo", "lancia", "maserati"],
+    "renault": ["dacia", "alpine", "lada", "nissan", "infiniti", "mitsubishi"],
+    "ford": ["lincoln"],
+    "gm": ["general motors", "chevrolet", "gmc", "cadillac", "buick"],
+    "hyundai": ["hyundai motor", "kia", "genesis"],
+    "honda": ["acura"],
+    "volvo": ["polestar"],
+    "geely": ["geely auto", "lotus", "lynk & co"],
+    "byd": ["byd auto", "denza"],
+    "tesla": ["tesla motors"],
+    "jaguar land rover": ["jlr", "jaguar", "land rover"],
+    "tata": ["tata motors"],
+    "mahindra": ["mahindra & mahindra"],
+    "saic": ["mg motor", "roewe"],
+    "great wall": ["gwm", "haval", "ora"],
+    "mazda": ["mazda"],
+    "subaru": ["subaru"],
+    "suzuki": ["suzuki"],
+    "nio": ["nio"],
+    "xpeng": ["xpeng"],
+    "lucid": ["lucid motors"],
+    "rivian": ["rivian automotive"],
+    "ferrari": ["scuderia ferrari"],
+    "lamborghini": ["automobili lamborghini"]
+  },
+  "supplier_aliases": {
+    "bosch": ["robert bosch", "bosch rexroth"],
+    "continental": ["conti"],
+    "denso": ["denso"],
+    "zf": ["zf friedrichshafen"],
+    "magna": ["magna international"],
+    "aisin": ["aisin seiki"],
+    "hyundai mobis": ["mobis"],
+    "valeo": ["valeo"],
+    "aptiv": ["aptiv", "delphi"],
+    "forvia": ["faurecia", "hella"],
+    "lear": ["lear corporation"],
+    "yazaki": ["yazaki"],
+    "nxp": ["nxp semiconductors"],
+    "infineon": ["infineon technologies"],
+    "renesas": ["renesas electronics"],
+    "stmicroelectronics": ["st"],
+    "qualcomm": ["qualcomm"],
+    "nvidia": ["nvidia"],
+    "mobileye": ["mobileye"],
+    "harman": ["harman", "harman kardon", "samsung harman"],
+    "panasonic": ["panasonic"],
+    "sony": ["sony"],
+    "lg": ["lg electronics", "lg energy solution"],
+    "samsung sdi": ["samsung sdi"],
+    "catl": ["catl", "contemporary amperex"],
+    "sk on": ["sk innovation", "sk on"],
+    "siemens": ["siemens", "siemens energy"],
+    "rockwell": ["rockwell automation", "allen-bradley"],
+    "schneider": ["schneider electric"],
+    "abb": ["abb"],
+    "kuka": ["kuka"],
+    "fanuc": ["fanuc"],
+    "yaskawa": ["yaskawa"],
+    "omron": ["omron"],
+    "beckhoff": ["beckhoff"],
+    "mitsubishi electric": ["mitsubishi electric"],
+    "onsemi": ["on semiconductor"],
+    "microchip": ["microchip technology"],
+    "autoliv": ["autoliv"],
+    "marelli": ["marelli"]
+  },
+  "negative_terms": {
+    "es": [
+      "videojuego", "simulador", "Gran Turismo", "Forza", "Assetto Corsa", "Need for Speed",
+      "GTA", "Euro Truck Simulator", "modding", "fútbol", "F1", "Fórmula 1", "MotoGP",
+      "recall.*airbag", "Takata", "mantenimiento", "reparación (no ciber)",
+      "rumor", "rumores", "no confirmado", "sin evidencia", "desmentido", "simulacro",
+      "boletín de seguridad", "advisory", "parche", "actualización de seguridad",
+      "estudio", "investigación", "teórico", "prueba de concepto", "\\bPoC\\b"
+    ],
+    "en": [
+      "video game", "simulator", "Gran Turismo", "Forza", "Assetto Corsa", "Need for Speed",
+      "GTA", "Euro Truck Simulator", "modding", "soccer", "F1", "Formula 1", "MotoGP",
+      "recall.*airbag", "Takata", "maintenance", "mechanical repair",
+      "rumor", "rumors", "alleged", "not confirmed", "no evidence", "denied", "drill",
+      "security advisory", "advisory", "patch", "security update",
+      "study", "research", "theoretical", "proof of concept", "\\bPoC\\b"
+    ]
+  },
+  "query_templates": [
+    "({brands}) AND (({attack_terms}) OR ({vuln_terms})) AND (({automotive_terms}) OR ({protocols}) OR ({attack_vectors})) NOT ({negative_terms})",
+    "({suppliers}) AND (({attack_terms}) OR ({vuln_terms})) AND (({manufacturing_terms}) OR ({automotive_terms})) NOT ({negative_terms})",
+    "(({manufacturing_terms}) NEAR/5 ({attack_terms})) AND (({brands}) OR ({suppliers})) NOT ({negative_terms})",
+    "(({outcomes}) AND (({brands}) OR ({suppliers}) OR ({manufacturing_terms}))) NOT ({negative_terms})"
+  ]
+}
